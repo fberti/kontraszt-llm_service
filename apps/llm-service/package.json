@@ -1,0 +1,19 @@
+{
+  "name": "llm-service",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp exec convex dev",
+    "deploy": "vp exec convex deploy",
+    "import:parquet": "node scripts/import-parquet.mjs",
+    "call:llm": "node --experimental-strip-types scripts/call_llm.ts",
+    "run:llm-service": "node scripts/run-llm-service.mjs"
+  },
+  "dependencies": {
+    "convex": "^1.25.4"
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "vite-plus": "catalog:"
+  }
+}

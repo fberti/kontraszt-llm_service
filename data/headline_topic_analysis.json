@@ -1,0 +1,3527 @@
+[
+  {
+    "hashedId": "bf556dae041e1e5a",
+    "headlineText": "Húsz év után valódi ellenfélre lelt Orbán Viktor",
+    "label": "Belpolitika / Választási elemzés",
+    "sentiment": "Semleges / Objektív",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "90f2b628272bb8f2",
+    "headlineText": "Őrizetbe vették a Göncz Árpád városközponti halálos baleset okozóját",
+    "label": "Közlekedés / Bűnügy",
+    "sentiment": "Tárgyilagos / Negatív",
+    "entities": [
+      "Göncz Árpád városközpont"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "e074652ee50cafe3",
+    "headlineText": "„már készülünk is a rendszerváltásra, de nem tudjuk előre, bőrönd lesz-e belőle vagy válltáska”",
+    "label": "Belpolitika / Politikai szatíra",
+    "sentiment": "Ironikus / Bizonytalan",
+    "entities": [
+      "rendszerváltás"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "172c821fbeb21fb1",
+    "headlineText": "A Fidesz politikusai elborzadtak Eckü herés performanszától",
+    "label": "Kultúra / Politikai botrány",
+    "sentiment": "Kritikus / Szenzációhajhász",
+    "entities": [
+      "Fidesz",
+      "Eckü"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "c8d4d137a95b74f0",
+    "headlineText": "Európában csak három országban van vagyonadó, és mind a három ugyanazzal a problémával szembesül",
+    "label": "Gazdaság / Adózás",
+    "sentiment": "Elemző / Informatív",
+    "entities": [
+      "Európa",
+      "vagyonadó"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "4d045f13bd25d608",
+    "headlineText": "Májustól kötelező az irányjelző és a sisak az elektromos rollereken Ausztriában",
+    "label": "Közlekedés / Jogszabály",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Ausztria",
+      "elektromos roller"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "6b535eeadf734248",
+    "headlineText": "Inflációra panaszkodnak a magyarok, de rekordpénz parkol a számláikon",
+    "label": "Gazdaság / Pénzügy",
+    "sentiment": "Kritikus / Ellentmondásos",
+    "entities": [
+      "infláció"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "fd73dacc18fb34c0",
+    "headlineText": "Mit mond el egy társadalomról, ha erősödik a készpénzhasználat?",
+    "label": "Társadalom / Gazdaság",
+    "sentiment": "Elemző / Kíváncsi",
+    "entities": [
+      "készpénzhasználat"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "2bdcf12a1893500d",
+    "headlineText": "Külpolitikában defenzívába szorult a Tisza Párt – elemzés Krekó Péterrel",
+    "label": "Belpolitika / Külpolitika",
+    "sentiment": "Elemző / Kritikus",
+    "entities": [
+      "Tisza Párt",
+      "Krekó Péter"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "795a4d490f423165",
+    "headlineText": "Röviden összefoglaljuk a Pegasus-botrányt",
+    "label": "Belpolitika / Technológia",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Pegasus"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "d116f5e8c91922ae",
+    "headlineText": "A magyar moziközönség lelkén sok bűn szárad",
+    "label": "Kultúra / Társadalom",
+    "sentiment": "Kritikus / Provokatív",
+    "entities": [
+      "magyar moziközönség"
+    ],
+    "confidence": 0.85
+  },
+  {
+    "hashedId": "74e7d7c6e7465b06",
+    "headlineText": "Magyar férfi vezette az olasz lapot, amely felforgatta a világot",
+    "label": "Média / Nemzetközi",
+    "sentiment": "Pozitív / Büszke",
+    "entities": [
+      "Olaszország"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "hashedId": "95ef8d648a2a8071",
+    "headlineText": "Orbán Viktor: Azt hiszem, hogy a vártnál nagyobb arányú győzelmet fogunk aratni",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Magabiztos / Politikai",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "20be8ed10af1c770",
+    "headlineText": "Ukrán titkosszolgálati dokumentumok kerülhettek az Ellenponthoz – Zelenszkijék így akarták lejáratni Orbán Viktort",
+    "label": "Külpolitika / Biztonságpolitika",
+    "sentiment": "Negatív / Konspiratív",
+    "entities": [
+      "Ukrán titkosszolgálat",
+      "Ellenpont",
+      "Zelenszkij",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "cb5f4f921e184095",
+    "headlineText": "Szijjártó Péter szerint rendkívüli támogatás érkezhet az Egyesült Államokból",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Optimista / Politikai",
+    "entities": [
+      "Szijjártó Péter",
+      "Egyesült Államok"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "24ee36151644ac61",
+    "headlineText": "30 másodpercben a különbség egy fideszes és egy tiszás kampányesemény között",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Összehasonlító",
+    "entities": [
+      "Fidesz",
+      "Tisza Párt"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "39f40e2ef64950bb",
+    "headlineText": "Mit tett értünk a Fidesz 16 év alatt? Mutatjuk a teljes listát",
+    "label": "Belpolitika / Politikai értékelés",
+    "sentiment": "Semleges / Tényfeltáró",
+    "entities": [
+      "Fidesz"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "b488dbc978100b05",
+    "headlineText": "Takács Péter kemény üzenetet küldött a provokátorokról és a választás tétjéről",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Agresszív / Politikai",
+    "entities": [
+      "Takács Péter"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "ba07a2f80a90e11b",
+    "headlineText": "Felháborodás a budapesti tiszás kampányesemény után: egy édesanya is megszólalt",
+    "label": "Belpolitika / Társadalmi hatás",
+    "sentiment": "Negatív / Érzelmi",
+    "entities": [
+      "Tisza Párt",
+      "Budapest"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "hashedId": "011b8ef3a1d733c6",
+    "headlineText": "Egyre több fiatal áll ki Orbán Viktor mellett – itt az újabb videó",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Politikai",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "65313ba1ff33d7b3",
+    "headlineText": "Plakátrongálás, gyújtogatás – elszabadult a pokol a Rendszerbontó Nagykoncert után",
+    "label": "Belpolitika / Közbiztonság",
+    "sentiment": "Negatív / Riasztó",
+    "entities": [
+      "Rendszerbontó Nagykoncert"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "65e9d9a27225c90c",
+    "headlineText": "Először rögzítették: halálos erőszak egy csimpánz-„polgárháborúban”",
+    "label": "Tudomány / Természet",
+    "sentiment": "Semleges / Tudományos",
+    "entities": [
+      "csimpánz"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "cdcaf0d66c066559",
+    "headlineText": "Ezeken a fukar, skót vicceken mindenki nagyot fog nevetni",
+    "label": "Szórakozás / Humor",
+    "sentiment": "Pozitív / Könnyed",
+    "entities": [
+      "Skócia"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "1712ac45c732cce9",
+    "headlineText": "Fényes nappal, a Bálnánál besétált a Dunába egy fiatalember, majd nyoma veszett",
+    "label": "Bűnügy / Tragédia",
+    "sentiment": "Negatív / Tragikus",
+    "entities": [
+      "Bálna",
+      "Duna"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "a1c0aaa0b36348f8",
+    "headlineText": "Repülőjegyárak: most foglaljunk vagy még várjunk? – itt a válasz a szakértőtől",
+    "label": "Utazás / Gazdaság",
+    "sentiment": "Segítő / Informatív",
+    "entities": [
+      "repülőjegy"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "7d8c514057c42b04",
+    "headlineText": "Negyven éve épült a Hungaroring: így indult a magyar Forma–1 története – galéria",
+    "label": "Sport / Történelem",
+    "sentiment": "Pozitív / Nosztalgikus",
+    "entities": [
+      "Hungaroring",
+      "Forma-1"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "6ab5aec315aa4ef9",
+    "headlineText": "A Honvédot sem kímélte az MLSZ, pénzbüntetést kaptak a kispestiek",
+    "label": "Sport / Labdarúgás",
+    "sentiment": "Negatív / Hírszerű",
+    "entities": [
+      "Honvéd",
+      "MLSZ"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "c92d8eb60b8e8530",
+    "headlineText": "Mutatjuk, hogyan kell felnit tisztítani!",
+    "label": "Életmód / Autó",
+    "sentiment": "Semleges / Hasznos",
+    "entities": [
+      "felni"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "bef617b74b6f341b",
+    "headlineText": "Hátborzongató gyilkosság, előre kitervelte a szörny a mészárlást",
+    "label": "Bűnügy",
+    "sentiment": "Erősen negatív / Szenzációhajhász",
+    "entities": [
+      "gyilkosság"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "6398d67ad8f86eb5",
+    "headlineText": "Megkezdődött az Egymillió kézfogás akciósorozat – velük már kezet ráztak",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Informatív",
+    "entities": [
+      "Egymillió kézfogás"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "70ece031e0c9e245",
+    "headlineText": "Schobert Norbi Jr. Amerikában kezdett volna új életet – váratlan fordulat jött",
+    "label": "Bulvár / Személyiség",
+    "sentiment": "Semleges / Érdeklődő",
+    "entities": [
+      "Schobert Norbi Jr.",
+      "Amerika"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "1ea77d367ae7f60b",
+    "headlineText": "30 barlangi mentő segített kiszabadítani a bajbajutott túrázót a Mátyás-hegy gyomrából",
+    "label": "Belföldi hírek / Katasztrófavédelem",
+    "sentiment": "Tárgyilagos / Drámai",
+    "entities": [
+      "Mátyás-hegy"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "e782aceb06df9ddf",
+    "headlineText": "Ilyen még nem volt: új jármű debütál a Gyermekvasúton",
+    "label": "Közlekedés / Kultúra",
+    "sentiment": "Pozitív / Érdeklődő",
+    "entities": [
+      "Gyermekvasút"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "380c0ef8274094f8",
+    "headlineText": "Lázár János: Vácon is a Fidesz a biztos választás!",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Politikai / Meggyőző",
+    "entities": [
+      "Lázár János",
+      "Vác",
+      "Fidesz"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "4c0666ff869fdb94",
+    "headlineText": "Eddig titkolták, most már nyíltan beismerik – megszólalt Magyar Péter energetikai szakértője a rezsicsökkentésről",
+    "label": "Belpolitika / Gazdaság",
+    "sentiment": "Kritikus / Leleplező",
+    "entities": [
+      "Magyar Péter",
+      "rezsicsökkentés"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "a69a6ff3570199e7",
+    "headlineText": "Szalah mint drámakirálynő? Nem mindenki szerint legenda a Liverpool távozó sztárja",
+    "label": "Sport / Labdarúgás",
+    "sentiment": "Kritikus / Véleményező",
+    "entities": [
+      "Szalah",
+      "Liverpool"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "229f281342d5ea62",
+    "headlineText": "Kifütyülték a Real Madrid edzőjét, aki durván beleszállt a játékvezetésbe",
+    "label": "Sport / Labdarúgás",
+    "sentiment": "Negatív / Konfliktusos",
+    "entities": [
+      "Real Madrid"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "3da15f26f8d89be9",
+    "headlineText": "Versenyzés közben tarolhatta le áldozata autóját a török vállalkozó a Váci úti felüljárón - Ennyiért árulta Audiját a halált okozó ámokfutó",
+    "label": "Bűnügy / Közlekedés",
+    "sentiment": "Erősen negatív / Tragikus",
+    "entities": [
+      "Váci út",
+      "Audi"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "9e4f2064fdba8e23",
+    "headlineText": "A Pokoli rokonok sztárjának őszinte vallomása - elárult egy dolgot féltve őrzött magánéletéről Domokos Éva Lili",
+    "label": "Bulvár / Szórakozás",
+    "sentiment": "Személyes / Érzelmes",
+    "entities": [
+      "Pokoli rokonok",
+      "Domokos Éva Lili"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "135a53bcd7d45c95",
+    "headlineText": "Tizenhat éve önkéntes rendőr Angliában Zsolt: most elárulta, ezért nincs fegyverük a brit zsaruknak",
+    "label": "Külföld / Életmód",
+    "sentiment": "Informatív",
+    "entities": [
+      "Anglia"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "3ff313144f309194",
+    "headlineText": "Megdőlt a hajnali hidegrekord: mínusz 7,4 fokot mértek Szabolcsban",
+    "label": "Időjárás",
+    "sentiment": "Semleges",
+    "entities": [
+      "Szabolcs"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "e5fc6d21d646e04a",
+    "headlineText": "Tóth Gabi kiakadt a Rendszerbontó Nagykoncert miatt: „Drogos kutyák veszik elő a péniszüket a színpadon” – videó",
+    "label": "Bulvár / Közélet",
+    "sentiment": "Agresszív / Botrányos",
+    "entities": [
+      "Tóth Gabi",
+      "Rendszerbontó Nagykoncert"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "7c6747543516539f",
+    "headlineText": "Gólyahír: Megszületett Molnár Gusztáv gyermeke – fotón a pici",
+    "label": "Bulvár / Család",
+    "sentiment": "Pozitív",
+    "entities": [
+      "Molnár Gusztáv"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "2b8969aa32e43aed",
+    "headlineText": "Nem hiszi el, mit keresnek a rendőrök nagy erőkkel",
+    "label": "Bűnügy / Clickbait",
+    "sentiment": "Rejtélyes",
+    "entities": [],
+    "confidence": 0.85
+  },
+  {
+    "hashedId": "ad5c04ee75a047bf",
+    "headlineText": "Az ezekben a hónapokban születtek a legmegbízhatóbb emberek az asztrológia szerint",
+    "label": "Életmód / Ezotéria",
+    "sentiment": "Pozitív",
+    "entities": [
+      "asztrológia"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "31485143402c129f",
+    "headlineText": "Amerikában folytathatja a kosárvarázst Juhász Dorka",
+    "label": "Sport / Kosárlabda",
+    "sentiment": "Pozitív",
+    "entities": [
+      "Amerika",
+      "Juhász Dorka"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "32b2012718981d92",
+    "headlineText": "Választás 2026 – szavazási kisokos: minden fontos tudnivaló egy helyen",
+    "label": "Belpolitika / Közszolgálat",
+    "sentiment": "Semleges / Informatív",
+    "entities": [
+      "Választás 2026"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "b1476be469f86a8a",
+    "headlineText": "Molinóval üzentek Szoboszlai Dominiknak, bűnbaknak kiáltanák ki: „Te beszélsz hűségről?”",
+    "label": "Sport / Labdarúgás",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Szoboszlai Dominik"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "f3d45d303637603c",
+    "headlineText": "Már véresre vakarta magát a fiatal nő, akinél először ekcémát diagnosztizáltak – a viszketés végül daganatot jelzett",
+    "label": "Egészség",
+    "sentiment": "Riasztó / Drámai",
+    "entities": [],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "b8e9e9e94c0e8c63",
+    "headlineText": "Csak egy káposztalevél kell hozzá: Ez a titkos módszer „elszívja” a gyulladást a testedből",
+    "label": "Egészség / Alternatív gyógyászat",
+    "sentiment": "Ígéretes",
+    "entities": [],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "4417d079a091c400",
+    "headlineText": "Összetört a kamerák előtt: T. Danny édesanyja a legrosszabbtól rettegett",
+    "label": "Bulvár",
+    "sentiment": "Drámai / Érzelmes",
+    "entities": [
+      "T. Danny"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "ebd95df575935027",
+    "headlineText": "Sokkoló vallomás: Gáspár Virág nemet mond a házasságra – anyját is ledöbbentette, mit mondott a gyerekről",
+    "label": "Bulvár",
+    "sentiment": "Meglepő / Konfliktusos",
+    "entities": [
+      "Gáspár Virág"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "1117f20b195c63ee",
+    "headlineText": "Üzennek az elhunytak: ha róluk álmodsz, ezt a jelet figyeld, sorsdöntő hírt közölnek veled",
+    "label": "Ezotéria",
+    "sentiment": "Misztikus",
+    "entities": [],
+    "confidence": 0.91
+  },
+  {
+    "hashedId": "7d9ff2fe3a9266c0",
+    "headlineText": "Ők sosem hagynak cserben: ez a 4 csillagjegy a legkeményebb támasz a legrosszabb napokon is",
+    "label": "Életmód / Ezotéria",
+    "sentiment": "Pozitív",
+    "entities": [
+      "csillagjegy"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "b806d2c8a38d347a",
+    "headlineText": "Reggel magas a vércukorszintje? Ezek az apró szokások meglepően sokat számíthatnak",
+    "label": "Egészség",
+    "sentiment": "Segítő / Informatív",
+    "entities": [],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "eaca2743d1bfd128",
+    "headlineText": "A világ legjobb fésűjét tényleg beszerezheted 6000 Ft alatt? Igen, mutatjuk, hol!",
+    "label": "Életmód / Vásárlás",
+    "sentiment": "Reklám / Érdeklődő",
+    "entities": [],
+    "confidence": 0.88
+  },
+  {
+    "hashedId": "a2e58ce7fe9deb85",
+    "headlineText": "Szoboszlai Dominik és Buzsik Borka friss fotójától leesett az állunk, a legstílusosabb sztárpár címet is kiérdemelnék",
+    "label": "Bulvár / Sport",
+    "sentiment": "Pozitív / Csodálkozó",
+    "entities": [
+      "Szoboszlai Dominik",
+      "Buzsik Borka"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "6b5ab99b45982909",
+    "headlineText": "Erős Antónia üzenetét az egész országnak hallania kell!",
+    "label": "Közélet / Egészség",
+    "sentiment": "Sürgető / Figyelemfelhívó",
+    "entities": [
+      "Erős Antónia"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "44dabbb08cbf12c2",
+    "headlineText": "Török Gábor: Magyar Péterrel olyan kontraszt képződött meg, amiben másképp látjuk Orbán Viktort",
+    "label": "Belpolitika / Elemzés",
+    "sentiment": "Elemző / Semleges",
+    "entities": [
+      "Török Gábor",
+      "Magyar Péter",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "26b14512b9b7d9b0",
+    "headlineText": "Hann Endre: Határozottan merem állítani, hogy a Tisza nyeri a választást",
+    "label": "Belpolitika / Közvélemény-kutatás",
+    "sentiment": "Politikai / Határozott",
+    "entities": [
+      "Hann Endre",
+      "Tisza párt"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "7596480a5a7a704e",
+    "headlineText": "Donald Trump: Örömmel fektetünk be abba a jövőbeli jólétbe, amelyet Orbán folyamatos vezetése fog előidézni",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Donald Trump",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "daf20b07f39ba649",
+    "headlineText": "Orbán egymillió kézfogást vár, tőle egyetlen kézfogást kértek, de mást adott",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Kritikus / Ironikus",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "9f4ea0ec5226cbc9",
+    "headlineText": "Magyar Péter: A fideszes maffiának már nincs hatalma felettetek",
+    "label": "Belpolitika / Kampányretorika",
+    "sentiment": "Agresszív / Konfrontatív",
+    "entities": [
+      "Magyar Péter",
+      "Fidesz"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "b82d66e66beddf22",
+    "headlineText": "Gyarmati Andrea ajánlata a választási lázban égő országnak: Ízek, imák, szerelmek",
+    "label": "Közélet / Életmód",
+    "sentiment": "Semleges / Inspiráló",
+    "entities": [
+      "Gyarmati Andrea"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "bc01a7d73342cf98",
+    "headlineText": "Hogyan szorítható keretek közé a propaganda?",
+    "label": "Média / Politikai elemzés",
+    "sentiment": "Kritikus / Kérdező",
+    "entities": [
+      "propaganda"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "4fae089428e0bc75",
+    "headlineText": "Mínusz 7,4 fok! – megdőlt a hajnali hidegrekord",
+    "label": "Időjárás",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "hidegrekord"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "e5c9cfcfe7447f8b",
+    "headlineText": "Gyászmagyarkának nevezték, az osztrák himnuszt kezdték el játszani a győzelmekor",
+    "label": "Sport / Közélet",
+    "sentiment": "Negatív / Botrányos",
+    "entities": [
+      "osztrák himnusz"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "49a6c939b882e377",
+    "headlineText": "„Ez itt és a Holdon is tizenegyes” – forrong a dühtől a Real Madrid, a bajnoki címbe kerülhet ez a döntés",
+    "label": "Sport / Labdarúgás",
+    "sentiment": "Erősen negatív / Felháborodott",
+    "entities": [
+      "Real Madrid"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "4a3fdb1e1c7558a4",
+    "headlineText": "Jól jöhet az ausztriai szigorítás annak, aki most vásárolna elektromos rollert magyarországi használatra",
+    "label": "Közlekedés / Életmód",
+    "sentiment": "Semleges / Informatív",
+    "entities": [
+      "Ausztria",
+      "elektromos roller"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "2e609c2ed0efe77d",
+    "headlineText": "Sírsz hagymapucolás közben? Egyszerű trükkel elkerülhető a könnyezés",
+    "label": "Életmód / Gasztronómia",
+    "sentiment": "Pozitív / Segítő",
+    "entities": [
+      "hagyma"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "d410b8a1188161fd",
+    "headlineText": "„Élhető fizetést kellett volna adnotok nekünk” – felgyújtotta a munkahelyét egy raktári alkalmazott Kaliforniában",
+    "label": "Külföldi hírek / Bűnügy",
+    "sentiment": "Negatív / Drámai",
+    "entities": [
+      "Kalifornia"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "bdd7d3e4a82d1e35",
+    "headlineText": "A V-alakú hajvágás újra divatba jött – így ad karaktert és volument a frizurának",
+    "label": "Életmód / Szépségápolás",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "hajvágás"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "de6a183bf105f14e",
+    "headlineText": "Jöhetnek a változó külsejű autók",
+    "label": "Technológia / Autózás",
+    "sentiment": "Semleges / Érdeklődő",
+    "entities": [
+      "autók"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "de7b3dd3c8e14a95",
+    "headlineText": "Lebukott a trükkös kamionos",
+    "label": "Közlekedés / Bűnügy",
+    "sentiment": "Negatív / Leleplező",
+    "entities": [
+      "kamionos"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "8f472f8d9ff7730c",
+    "headlineText": "A választás előtti napon olyat lépett a Fidesz kampánytriója, amilyet még nem láttunk tőlük",
+    "label": "Belpolitika / Választás",
+    "sentiment": "Kíváncsiságot keltő / Semleges",
+    "entities": [
+      "Fidesz"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "d121897cd0bfbea6",
+    "headlineText": "The Guardian: Orbán Viktor a hatalom elvesztésének küszöbén van",
+    "label": "Külpolitika / Nemzetközi sajtó",
+    "sentiment": "Kritikus / Elemző",
+    "entities": [
+      "The Guardian",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "30ec387ef5ff8171",
+    "headlineText": "Itt az Index választási lottója, tippelje meg, milyen lesz az új parlament!",
+    "label": "Belpolitika / Választás",
+    "sentiment": "Semleges / Interaktív",
+    "entities": [
+      "Index",
+      "parlament"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "f1edc359205c9129",
+    "headlineText": "Érdemes jókor érkezni a szavazóhelyiségekhez",
+    "label": "Belpolitika / Választás",
+    "sentiment": "Semleges / Tanácsadó",
+    "entities": [
+      "szavazóhelyiség"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "120d11f540c68f17",
+    "headlineText": "Hatalmas a mozgolódás, már több mint 250 ezer levélszavazatot leadtak",
+    "label": "Belpolitika / Választás",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "levélszavazat"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "c01e64be8a0214d2",
+    "headlineText": "Orbán Viktor: Megindítjuk az egymillió kézfogás akciót",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "d8d2ee8ead98e656",
+    "headlineText": "Szolgálatot teljesítő rendőrök, tűzoltók, bv-sek és katonák is szavazhatnak",
+    "label": "Belpolitika / Választás",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "rendőrök",
+      "tűzoltók",
+      "katonák"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "dbccf2f3a43ee48a",
+    "headlineText": "Washington szerint az Európai Bizottság beavatkozik a magyar választásokba, felszólították Ursula von der Leyent",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Kritikus / Feszült",
+    "entities": [
+      "Washington",
+      "Európai Bizottság",
+      "Ursula von der Leyen"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "288e8ee60836cbba",
+    "headlineText": "„Húszévesek tömegét gyakorlatilag népirtással skandáltatják” – Nemes Dániel szégyenletesnek nevezte G Ras fellépését",
+    "label": "Közélet / Kultúra",
+    "sentiment": "Erősen negatív / Felháborodott",
+    "entities": [
+      "Nemes Dániel",
+      "G Ras"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "d41137f02a9aaf44",
+    "headlineText": "Olyat mondott a kínai elnök, amitől mindenki ledöbbent",
+    "label": "Külpolitika / Nemzetközi hírek",
+    "sentiment": "Szenzációhajhász / Semleges",
+    "entities": [
+      "kínai elnök"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "96e215e0928738f7",
+    "headlineText": "Scottie Pippen felesége kikészült, 23 éven át mindennap négyszer kellett szeretkeznie a kosarassal",
+    "label": "Bulvár",
+    "sentiment": "Negatív / Szenzációhajhász",
+    "entities": [
+      "Scottie Pippen"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "b8b781d7ed6cd2e1",
+    "headlineText": "Tóth Gabi is reagált a pénteki koncertre: Drogos kutyák veszik elő a péniszüket a színpadon",
+    "label": "Bulvár / Kultúra",
+    "sentiment": "Erősen negatív / Botrányos",
+    "entities": [
+      "Tóth Gabi"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "d232469238b38706",
+    "headlineText": "Hajdú Péter elárulta, mi volt Orbán Viktor feltétele az interjúval kapcsolatban",
+    "label": "Bulvár / Politika",
+    "sentiment": "Semleges / Érdeklődő",
+    "entities": [
+      "Hajdú Péter",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "7f71ce081b38d7a4",
+    "headlineText": "Török vállalkozó tarolta Audijával a vétlen áldozat kocsiját",
+    "label": "Bűnügy / Közlekedés",
+    "sentiment": "Negatív / Tragikus",
+    "entities": [
+      "Audi"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "699793c4da1ae88b",
+    "headlineText": "Meghalt Vajda József",
+    "label": "Gyászhír",
+    "sentiment": "Semleges / Tiszteletteljes",
+    "entities": [
+      "Vajda József"
+    ],
+    "confidence": 1
+  },
+  {
+    "hashedId": "9fd2661d10f0a270",
+    "headlineText": "Nagy Mártont nem tiszteli, Navracsics Tibort azonban „fantasztikus úriembernek” tartja Balogh Levente",
+    "label": "Közélet / Üzleti élet",
+    "sentiment": "Kritikus / Véleményező",
+    "entities": [
+      "Nagy Márton",
+      "Navracsics Tibor",
+      "Balogh Levente"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "333b7b44aa5b5291",
+    "headlineText": "Az Európai Parlament megmentené a vegán burgert, de két termék továbbra is bajban lehet",
+    "label": "Európai Unió / Élelmiszeripar",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Európai Parlament",
+      "vegán burger"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "f8d22d1a886db0b1",
+    "headlineText": "Energiára mindig szükség van",
+    "label": "Energiaipar / Gazdaság",
+    "sentiment": "Semleges / Tényközlő",
+    "entities": [
+      "energia"
+    ],
+    "confidence": 0.85
+  },
+  {
+    "hashedId": "f0d6580b8ee507b9",
+    "headlineText": "Visszatér az Emily Párizsban, két új európai országban játszódik majd a 6. évad",
+    "label": "Szórakozás / Média",
+    "sentiment": "Pozitív / Érdeklődő",
+    "entities": [
+      "Emily Párizsban",
+      "sorozat"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "143f1926e833d605",
+    "headlineText": "Magyar Péter attól tart, hogy balhékkal, bombariadókkal zavarhatják meg a választásokat",
+    "label": "Belpolitika",
+    "sentiment": "Negatív / Aggódó",
+    "entities": [
+      "Magyar Péter",
+      "választások"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "5fca6a8d5fea1bdc",
+    "headlineText": "Macskák az ókori Egyiptomban – Kvíz",
+    "label": "Szórakozás / Történelem",
+    "sentiment": "Semleges / Játékos",
+    "entities": [
+      "Egyiptom",
+      "macskák"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "dc3af9f1bcf1a97e",
+    "headlineText": "Április 11-től újra járható Tihany forgalmas utcája",
+    "label": "Közélet / Helyi hírek",
+    "sentiment": "Pozitív / Tájékoztató",
+    "entities": [
+      "Tihany"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "df8a77aa1d969e7c",
+    "headlineText": "AZ ADIDAS VALÓDI SZUPERSZTÁROKKAL INDÍTOTT ÚJ KAMPÁNYT",
+    "label": "Marketing / Üzlet",
+    "sentiment": "Pozitív / Reklám",
+    "entities": [
+      "Adidas"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "4f1cf780f42d9934",
+    "headlineText": "A NÉPKÖZTÁRSASÁGTÓL A KÖZTÁRSASÁGIG: 1989. OKTÓBER 23. KRÓNIKÁJA",
+    "label": "Történelem / Politika",
+    "sentiment": "Semleges / Dokumentarista",
+    "entities": [
+      "1989",
+      "október 23."
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "8422520960044bd2",
+    "headlineText": "Mennyire ismered a magyar költészetet?",
+    "label": "Kultúra / Oktatás",
+    "sentiment": "Semleges / Játékos",
+    "entities": [
+      "magyar költészet"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "d41a6f919f71e5e1",
+    "headlineText": "Váratlan fordulat: a német pénzügyminiszter is extraprofitadót követel, durván nekimenne az energiacégeknek",
+    "label": "Gazdaság / Nemzetközi politika",
+    "sentiment": "Kritikus / Konfrontatív",
+    "entities": [
+      "német pénzügyminiszter",
+      "extraprofitadó",
+      "energiaipar"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "f21e84d2dcdf2925",
+    "headlineText": "Jó hírt kapott a kormány a választási hajrában, de a gazdaság még nem ünnepelhet",
+    "label": "Belpolitika / Gazdaság",
+    "sentiment": "Vegyes / Óvatos",
+    "entities": [
+      "kormány",
+      "választások"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "d2981161ae59707e",
+    "headlineText": "Megszólalt a rendőrség: így készülnek a választásra",
+    "label": "Közélet / Biztonság",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "rendőrség",
+      "választások"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "1bea52f59363c849",
+    "headlineText": "Borzasztó tragédia: két ártatlan ember halt meg Budapest belvárosában, ez okozta a balesetet",
+    "label": "Krimi / Baleset",
+    "sentiment": "Erősen negatív / Tragikus",
+    "entities": [
+      "Budapest"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "71788292428342a0",
+    "headlineText": "Ez a bolognai 3 trükkje: te is így főzöd majd",
+    "label": "Életmód / Gasztronómia",
+    "sentiment": "Pozitív / Hasznos",
+    "entities": [
+      "bolognai"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "03195352d2d92ced",
+    "headlineText": "Ez a 8 növény mindent kibír",
+    "label": "Életmód / Kertészet",
+    "sentiment": "Pozitív / Hasznos",
+    "entities": [
+      "növények"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "4697e9436b90a669",
+    "headlineText": "Csak egy kanál ebből a felmosóvízbe: úgy ragyog majd a padló, hogy a szomszéd is irigy lesz",
+    "label": "Életmód / Háztartás",
+    "sentiment": "Pozitív / Szenzációhajhász",
+    "entities": [
+      "háztartás"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "62e9074b6df759de",
+    "headlineText": "Iszonyú dögös pasi lett a Csillag Születik egykori nyertes gyereksztárja",
+    "label": "Bulvár",
+    "sentiment": "Pozitív / Bulvár",
+    "entities": [
+      "Csillag Születik"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "ff5353146ffe4a63",
+    "headlineText": "Ezt jelenti valójában, ha valaki azt írja neked, hogy „OK”",
+    "label": "Életmód / Kommunikáció",
+    "sentiment": "Semleges / Érdekesség",
+    "entities": [
+      "kommunikáció"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "8203c551d7000364",
+    "headlineText": "Itthon is kapható a Fiat legkisebb, legnyomibb, legcukibb \"autója\"!",
+    "label": "Autó / Életmód",
+    "sentiment": "Pozitív / Játékos",
+    "entities": [
+      "Fiat"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "919895040c45b7fa",
+    "headlineText": "RUBINT RELLA VOLT FÉRJE SZŐKE BOMBÁZÓVAL JÖTT ÖSSZE",
+    "label": "Bulvár",
+    "sentiment": "Semleges / Bulvár",
+    "entities": [
+      "Rubint Rella"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "184b573eca0bbac7",
+    "headlineText": "Csepregi Éva otthona szobáról szobára: lenyűgöző helyen él az énekesnő",
+    "label": "Bulvár / Életmód",
+    "sentiment": "Pozitív / Érdeklődő",
+    "entities": [
+      "Csepregi Éva"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "c504343dba3fafa2",
+    "headlineText": "Kínos helyzetek, humor és romantika: könnyed, tavaszi olvasmányokkal érkeztünk",
+    "label": "Kultúra / Könyvajánló",
+    "sentiment": "Pozitív / Könnyed",
+    "entities": [
+      "könyvek"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "54c78047bdde5430",
+    "headlineText": "Négy líraian szép film és egy sorozat a költészet napjára",
+    "label": "Kultúra / Film",
+    "sentiment": "Pozitív / Ajánló",
+    "entities": [
+      "költészet napja"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "b3337370b5af182f",
+    "headlineText": "A filmtörténelem 5 legikonikusabb kelléke",
+    "label": "Kultúra / Film",
+    "sentiment": "Semleges / Érdekesség",
+    "entities": [
+      "filmtörténelem"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "8f09318b6350fbe2",
+    "headlineText": "John Travolta lánya már 26 éves: Ella Bleu-ból csodaszép modell lett",
+    "label": "Bulvár",
+    "sentiment": "Pozitív / Bulvár",
+    "entities": [
+      "John Travolta",
+      "Ella Bleu"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "1fc936ab89b6961c",
+    "headlineText": "Így készül a tepsis palacsinta: gyors, édes reggelit mutatunk",
+    "label": "Életmód / Gasztronómia",
+    "sentiment": "Pozitív / Hasznos",
+    "entities": [
+      "palacsinta"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "3c17abc420ffd4dd",
+    "headlineText": "Gluténmentes magvas kenyér: fehérjedús és nagyon finom",
+    "label": "Életmód / Gasztronómia",
+    "sentiment": "Pozitív / Hasznos",
+    "entities": [
+      "gluténmentes"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "dd2df07e56928752",
+    "headlineText": "Versben a futball – A magyar költészet napjára",
+    "label": "Kultúra / Sport",
+    "sentiment": "Semleges / Kulturális",
+    "entities": [
+      "futball",
+      "költészet napja"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "f60b2a0fd7524976",
+    "headlineText": "„A futball a férfilétezés kvintesszenciája” – interjú Kukorelly Endrével",
+    "label": "Kultúra / Sport",
+    "sentiment": "Semleges / Intellektuális",
+    "entities": [
+      "Kukorelly Endre",
+      "futball"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "6bc1d7a6a77b492e",
+    "headlineText": "A korábbi sikeredző asszisztense rakná össze a szétlopott csapatot",
+    "label": "Sport",
+    "sentiment": "Kritikus / Sport",
+    "entities": [
+      "sportcsapat"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "e47901483b4d45d3",
+    "headlineText": "Egy elcsalt szavazás",
+    "label": "Belpolitika / Választási integritás",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "választás",
+      "demokrácia"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "bc0429c27e68f31e",
+    "headlineText": "Orbán Viktor számára nincs megállás: Zúzunk tovább!",
+    "label": "Belpolitika / Kampányretorika",
+    "sentiment": "Pozitív / Aktív",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "56665fbdc9190d2b",
+    "headlineText": "Százmilliók a hergelésre? Young G Béci szerint hazudtak a rendszerbontó koncert költségeiről",
+    "label": "Közélet / Politikai botrány",
+    "sentiment": "Kritikus / Kételkedő",
+    "entities": [
+      "Young G Béci",
+      "koncert",
+      "pénzügyek"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "062f77f629dfd191",
+    "headlineText": "Kiderült, merre megy tovább Orbán Viktor",
+    "label": "Belpolitika / Politikai kommunikáció",
+    "sentiment": "Semleges",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "36095cd7b4b82aec",
+    "headlineText": "Tóth Gabi: „Egyre jobban érzem, hogy a jó oldalon állok”",
+    "label": "Közélet / Politikai véleménynyilvánítás",
+    "sentiment": "Pozitív / Elkötelezett",
+    "entities": [
+      "Tóth Gabi"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "cc85ab2b9af43f02",
+    "headlineText": "Nem akármit csinált Balassagyarmaton Orbán Viktor",
+    "label": "Belpolitika / Kampányesemény",
+    "sentiment": "Semleges / Figyelemfelkeltő",
+    "entities": [
+      "Orbán Viktor",
+      "Balassagyarmat"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "95784ea86be3b42a",
+    "headlineText": "„Én az életre szavazok!” – Orbán Viktor mellett tett hitet az EDDA frontembere",
+    "label": "Közélet / Politikai véleménynyilvánítás",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Orbán Viktor",
+      "EDDA"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "e436af8eb86b4957",
+    "headlineText": "Egymillió kézfogás: képeken Orbán Viktor délelőttje",
+    "label": "Belpolitika / Kampányesemény",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "bc260f9448840deb",
+    "headlineText": "Orbán Viktor videót osztott meg a váci látogatásáról",
+    "label": "Belpolitika / Kampányesemény",
+    "sentiment": "Semleges",
+    "entities": [
+      "Orbán Viktor",
+      "Vác"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "0086514ea5e270e1",
+    "headlineText": "Balassagyarmat is Orbán Viktor mellett áll",
+    "label": "Belpolitika / Kampányesemény",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Orbán Viktor",
+      "Balassagyarmat"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "d8b645dc7315d7a2",
+    "headlineText": "Egymillió kézfogás: Szijjártó Péter nagy hírt közölt",
+    "label": "Belpolitika / Politikai kommunikáció",
+    "sentiment": "Pozitív / Figyelemfelkeltő",
+    "entities": [
+      "Szijjártó Péter"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "c1ef22bfdc6497d0",
+    "headlineText": "Danny Blue már tudja, hogy ki fog nyerni április 12-én",
+    "label": "Közélet / Választási jóslat",
+    "sentiment": "Semleges / Rejtélyes",
+    "entities": [
+      "Danny Blue",
+      "választás"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "f15a6d65c578f3a9",
+    "headlineText": "Szabó Zsófi csak egyet kér minden választópolgártól",
+    "label": "Közélet / Választási mozgósítás",
+    "sentiment": "Semleges / Buzdító",
+    "entities": [
+      "Szabó Zsófi"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "71dc5211bd01d6e4",
+    "headlineText": "Egy édesanya reagált a botrányos tiszás kampányeseményre",
+    "label": "Belpolitika / Kampányesemény",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Tisza párt"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "b05ff98935ec3366",
+    "headlineText": "5 tavaszi zöldség, ami természetesen feltölt vitaminokkal",
+    "label": "Életmód / Egészség",
+    "sentiment": "Pozitív / Informatív",
+    "entities": [
+      "vitamin",
+      "zöldség"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "8e0e0f2291721c1a",
+    "headlineText": "Orvosokat is sokkolta: Golflabda-méretű lett a kisfiú szeme",
+    "label": "Egészség / Orvosi eset",
+    "sentiment": "Negatív / Riasztó",
+    "entities": [
+      "orvos",
+      "egészségügy"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "173ecb54f353ba8f",
+    "headlineText": "Felesége főztjének titkos összetevője miatt akadt ki a férj",
+    "label": "Életmód / Gasztronómia",
+    "sentiment": "Negatív / Konfliktusos",
+    "entities": [
+      "főzés"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "249b09d37069eb7b",
+    "headlineText": "Egymás karjaiban halt meg a házaspár a pusztító vihar után",
+    "label": "Katasztrófa / Tragédia",
+    "sentiment": "Erősen negatív / Tragikus",
+    "entities": [
+      "vihar",
+      "tragédia"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "7913928215c53101",
+    "headlineText": "A remegésen túl: amit tudnod kell a Parkinson-kórról",
+    "label": "Egészség / Orvosi ismeretterjesztés",
+    "sentiment": "Semleges / Informatív",
+    "entities": [
+      "Parkinson-kór"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "ff276e1b41c50141",
+    "headlineText": "Orbán Viktor még sütni is segített Balassagyarmaton",
+    "label": "Belpolitika / Kampányesemény",
+    "sentiment": "Pozitív / Emberközeli",
+    "entities": [
+      "Orbán Viktor",
+      "Balassagyarmat"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "5472fdc3d31c73d3",
+    "headlineText": "Nacsa Olivér számára nem kérdés, kire szavaz a választásokon",
+    "label": "Közélet / Politikai véleménynyilvánítás",
+    "sentiment": "Pozitív / Elkötelezett",
+    "entities": [
+      "Nacsa Olivér"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "ff80c7b472efd52c",
+    "headlineText": "Tóth Gabi a biztonságot választja",
+    "label": "Közélet / Politikai véleménynyilvánítás",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Tóth Gabi"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "b53c15b1587017fa",
+    "headlineText": "Rubint Réka a szívére hallgat április 12-én!",
+    "label": "Közélet / Választási mozgósítás",
+    "sentiment": "Pozitív / Buzdító",
+    "entities": [
+      "Rubint Réka"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "cec5a6546fa8db3a",
+    "headlineText": "Kunu Márió az exének adott szerenádot",
+    "label": "Bulvár / Szórakozás",
+    "sentiment": "Semleges / Érzelmes",
+    "entities": [
+      "Kunu Márió"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "e1df364bd90fcfd8",
+    "headlineText": "Makray Katalin: A Fidesz a legjobb választás",
+    "label": "Közélet / Politikai véleménynyilvánítás",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Makray Katalin",
+      "Fidesz"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "c7aa0fb1a4e011ac",
+    "headlineText": "Hajdú Péter: Viharban nem jó dolog kapitányt váltani!",
+    "label": "Közélet / Politikai véleménynyilvánítás",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Hajdú Péter"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "6dd9cbc585721e1c",
+    "headlineText": "Maradékmentő recept: sajtos-sonkás rakott tészta, amit karfiollal tettünk még ízletesebbé",
+    "label": "Életmód / Gasztronómia",
+    "sentiment": "Pozitív / Hasznos",
+    "entities": [
+      "recept",
+      "gasztronómia"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "9e02051a02794218",
+    "headlineText": "Ez a sokak által használt gyógynövény csodaszer, de veszélyes is lehet!",
+    "label": "Egészség / Életmód",
+    "sentiment": "Figyelmeztető",
+    "entities": [
+      "gyógynövény"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "a8e6e01c1e45d434",
+    "headlineText": "A konzerv, ami túlélte az évtizedeket: így hódította meg a löncshús a világot",
+    "label": "Életmód / Gasztronómia",
+    "sentiment": "Semleges / Érdekesség",
+    "entities": [
+      "löncshús"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "00ea124fc47d9b29",
+    "headlineText": "A mesterséges intelligenciára épülhet az új iPhone-korszak",
+    "label": "Technológia / Innováció",
+    "sentiment": "Pozitív / Előremutató",
+    "entities": [
+      "mesterséges intelligencia",
+      "iPhone"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "a260c51da6b7753e",
+    "headlineText": "5 dolog, amit akkor is tilos megosztanod a főnökkel, ha családias a légkör a munkahelyeden",
+    "label": "Életmód / Karrier",
+    "sentiment": "Figyelmeztető / Tanácsadó",
+    "entities": [
+      "munkahely",
+      "főnök"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "608e482e7e00e12a",
+    "headlineText": "Ben Affleck lemondott a vagyonáról: meghökkentő döntést hozott Jennifer Lopez miatt",
+    "label": "Bulvár / Szórakoztatás",
+    "sentiment": "Szenzációhajhász",
+    "entities": [
+      "Ben Affleck",
+      "Jennifer Lopez"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "cb0c21e554d02d8d",
+    "headlineText": "Müller Péter: \"A látszatnak kifelé és befelé is nagy ereje van.\"",
+    "label": "Kultúra / Filozófia",
+    "sentiment": "Reflektív",
+    "entities": [
+      "Müller Péter"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "c96f6c6821078a38",
+    "headlineText": "Ebben a 3 hónapban születnek a legszeretőbb anyák − Egy asztrológus szerint",
+    "label": "Életmód / Ezotéria",
+    "sentiment": "Pozitív / Szórakoztató",
+    "entities": [
+      "asztrológia"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "1a369e064f712c9c",
+    "headlineText": "THE MAN KELLETT AHHOZ, HOGY BEROBBANJANAK A POLITIKÁBA A LÁNYOK",
+    "label": "Belpolitika / Elemzés",
+    "sentiment": "Provokatív",
+    "entities": [
+      "politika"
+    ],
+    "confidence": 0.85
+  },
+  {
+    "hashedId": "f5872957b28a5c27",
+    "headlineText": "Meg tudjátok védeni magatokat és mi is meg tudunk védeni titeket – üzeni Magyar Péter a legkiszolgáltatottabb szavazóknak, akiket „a Fidesz fenyegetéssel próbál meggyőzni”",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Konfrontatív",
+    "entities": [
+      "Magyar Péter",
+      "Fidesz"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "b4aaaf1d4ff1df34",
+    "headlineText": "Borízű hang #265: Napi 260 kilométert utaztak a kutyaszánok",
+    "label": "Életmód / Sport",
+    "sentiment": "Semleges / Informatív",
+    "entities": [
+      "kutyaszán"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "0014d17eaa81825b",
+    "headlineText": "Olyan fagy volt, hogy az országos hidegrekord is megdőlt hajnalban",
+    "label": "Időjárás / Közélet",
+    "sentiment": "Tárgyilagos",
+    "entities": [
+      "hidegrekord"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "407531532a18bde5",
+    "headlineText": "Súlyos sérülései ellenére is részt vesz a döntésekben Irán új legfelsőbb vezetője",
+    "label": "Külpolitika / Nemzetközi biztonság",
+    "sentiment": "Aggasztó",
+    "entities": [
+      "Irán"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "0aee589ea85197de",
+    "headlineText": "Mészáros Lőrincék tárgyaltak a Bászna Gabona átvételéről",
+    "label": "Gazdaság / Üzleti hírek",
+    "sentiment": "Semleges",
+    "entities": [
+      "Mészáros Lőrinc",
+      "Bászna Gabona"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "d065c86c08025a29",
+    "headlineText": "A világ legjobb egyetemeit minősítik nemkívánatos szervezetnek Oroszországban",
+    "label": "Külpolitika / Oktatáspolitika",
+    "sentiment": "Kritikus",
+    "entities": [
+      "Oroszország",
+      "egyetemek"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "508d337c0ae7bc16",
+    "headlineText": "Karácsony: Ha nem akarjuk, hogy a mi és a gyerekeink életének új fejezetét mások írják helyettünk, akkor magunknak kell hozzáfognunk",
+    "label": "Belpolitika / Választási kampány",
+    "sentiment": "Motiváló / Politikai",
+    "entities": [
+      "Karácsony Gergely"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "2aa3f30d565678c8",
+    "headlineText": "Vitézy: Újabb ártatlan áldozata lett az illegális utcai versenyzésnek Budapesten",
+    "label": "Közélet / Bűnügy",
+    "sentiment": "Tragikus / Kritikus",
+    "entities": [
+      "Vitézy Dávid",
+      "Budapest"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "a3593bc5b49000fa",
+    "headlineText": "Újabb 76 milliárdot adna a kormány a már így is rekorddrága mohácsi Duna-híd útjainak az építésére",
+    "label": "Gazdaság / Közpolitika",
+    "sentiment": "Kritikus / Költségvetési",
+    "entities": [
+      "kormány",
+      "mohácsi Duna-híd"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "66df60946e425be4",
+    "headlineText": "Marco Rossi nagy mellényúlása volt, most nekiment az edzőnek: Nem ezt érdemlem!",
+    "label": "Sport / Labdarúgás",
+    "sentiment": "Konfliktusos",
+    "entities": [
+      "Marco Rossi"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "004f937fbd05260a",
+    "headlineText": "Orbán Viktor: Fel, győzelemre!",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Patetikus / Politikai",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "4325aa540acb18f8",
+    "headlineText": "Elkeserítő jövő lehetőségét villantotta fel a tiszás koncert",
+    "label": "Belpolitika / Elemzés",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Tisza párt"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "a3598f84631eab13",
+    "headlineText": "Orbán Viktor Balassagyarmaton is begyűjtött jó pár kézfogást",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Leíró",
+    "entities": [
+      "Orbán Viktor",
+      "Balassagyarmat"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "6d4b820263e48f5b",
+    "headlineText": "Béke és biztonság, ez a legfontosabb üzenet + videó",
+    "label": "Belpolitika / Kommunikáció",
+    "sentiment": "Pozitív / Politikai",
+    "entities": [
+      "béke",
+      "biztonság"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "451265ab48f803d7",
+    "headlineText": "Lázár János: Hajrá, magyarok! + videó",
+    "label": "Belpolitika / Kommunikáció",
+    "sentiment": "Pozitív / Politikai",
+    "entities": [
+      "Lázár János"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "80769ec5043ff1d4",
+    "headlineText": "Szeméremsértés miatt feljelentették a heréző rappert",
+    "label": "Bűnügy / Bulvár",
+    "sentiment": "Szenzációhajhász",
+    "entities": [
+      "rapper"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "0f6100d534a99934",
+    "headlineText": "Harrison Ford meglepő őszinteséggel vallott betegségéről",
+    "label": "Szórakoztatás / Életmód",
+    "sentiment": "Empatikus",
+    "entities": [
+      "Harrison Ford"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "22758bafe960b86c",
+    "headlineText": "Szijjártó Péter: Az amerikai kormány a teljes gazdasági erejével és hatalmával készen áll arra, hogy Orbán Viktort támogassa + videó",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Politikai / Támogató",
+    "entities": [
+      "Szijjártó Péter",
+      "Orbán Viktor",
+      "USA"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "5db722865bd9060e",
+    "headlineText": "Ez is az iráni háború számlájára írható – így érinti a konfliktus német utazási szektort",
+    "label": "Gazdaság / Külpolitika",
+    "sentiment": "Negatív / Gazdasági",
+    "entities": [
+      "Irán",
+      "Németország"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "aa8eb2afd8f3349c",
+    "headlineText": "Orosz–ukrán háború, összefoglaló, április 11.",
+    "label": "Külpolitika / Háború",
+    "sentiment": "Semleges / Tárgyilagos",
+    "entities": [
+      "Oroszország",
+      "Ukrajna"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "0f4f3a8dc387c5e8",
+    "headlineText": "Ezeken a területeken születtek megállapodások az Egyesült Államok és hazánk között",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Semleges / Informatív",
+    "entities": [
+      "USA",
+      "Magyarország"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "e19031a7ed57e2cd",
+    "headlineText": "Tiszás giga ellentüntetés: egyetlen ember tiltakozott a kampánybusz ellen + videó",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Ironikus",
+    "entities": [
+      "Tisza párt"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "5bbdcdd5633e821e",
+    "headlineText": "Dömötör Csaba: Amerikai republikánus képviselők kritizálják az Európai Bizottság beavatkozását a magyar választásokba",
+    "label": "Belpolitika / Külpolitika",
+    "sentiment": "Kritikus / Politikai",
+    "entities": [
+      "Dömötör Csaba",
+      "Európai Bizottság",
+      "USA"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "ac911a2c3120e026",
+    "headlineText": "Orbán Viktor elárulta, kit támogat Vácon + videó",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Informatív",
+    "entities": [
+      "Orbán Viktor",
+      "Vác"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "14e579a96201ac4a",
+    "headlineText": "Alpári szintre süllyedt a heréjét mutogató tiszás rapper",
+    "label": "Belpolitika / Bulvár",
+    "sentiment": "Erősen negatív / Kritikus",
+    "entities": [
+      "Tisza párt",
+      "rapper"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "157a205689327227",
+    "headlineText": "Nagy Feró és Lázár János is kezet fogott",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Nagy Feró",
+      "Lázár János"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "9d8ce4d8a4ac7375",
+    "headlineText": "A fiatalok is tudják: Orbán Viktor a biztos választás + videó",
+    "label": "Belpolitika / Kampányretorika",
+    "sentiment": "Pozitív / Pártos",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "a479674241e8e8c9",
+    "headlineText": "A vasárnapi választás zsebre megy",
+    "label": "Gazdaság / Választási kampány",
+    "sentiment": "Figyelmeztető / Sürgető",
+    "entities": [
+      "választás"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "f6bc20a4004feabf",
+    "headlineText": "Bohár Dániel: A tiszások szerint megyek a levesbe!",
+    "label": "Belpolitika / Közéleti konfliktus",
+    "sentiment": "Kritikus / Ironikus",
+    "entities": [
+      "Bohár Dániel",
+      "Tisza párt"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "5cb9a4a6c945420b",
+    "headlineText": "Menczer Tamás: Mi kormányzunk, ti lóbáltok, mindenki teszi, amihez ért",
+    "label": "Belpolitika / Kampányretorika",
+    "sentiment": "Agresszív / Konfrontatív",
+    "entities": [
+      "Menczer Tamás"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "8543fe4884d2c565",
+    "headlineText": "Magyarországi fosszíliák zárják le a belemniteszek kihalásáról szóló vitát",
+    "label": "Tudomány / Paleontológia",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Magyarország",
+      "belemniteszek"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "2be7dcccd65c2e47",
+    "headlineText": "Ismét az illegális versenyzés okozhatta az Árpád hídnál történt halálos tömegbalesetet",
+    "label": "Bűnügy / Közlekedés",
+    "sentiment": "Negatív / Tragikus",
+    "entities": [
+      "Árpád híd"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "d6a10824e1f1bdc2",
+    "headlineText": "Hungary FM: As Long As We Have A National Gov't, We Will Not Go To War, And Hungarians’ Money Will Not Be Sent To Ukraine + Video",
+    "label": "Külpolitika / Háborús retorika",
+    "sentiment": "Pozitív / Nemzeti érdek",
+    "entities": [
+      "Magyarország",
+      "Ukrajna"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "4f2d635946a57887",
+    "headlineText": "Valóban 10 000 lépés kell a magas vérnyomás csökkentésére? Itt a válasz!",
+    "label": "Egészség / Életmód",
+    "sentiment": "Semleges / Informatív",
+    "entities": [
+      "magas vérnyomás"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "3251ecad689daa7d",
+    "headlineText": "Milliárdokkal támogatjuk a fontos társadalmi célokat",
+    "label": "Gazdaság / Közpolitika",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [],
+    "confidence": 0.85
+  },
+  {
+    "hashedId": "7208fa9d79b13c54",
+    "headlineText": "\"Egymillió kézfogás napja, hatalmas a tét vasárnap\"",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Mozgósító / Sürgető",
+    "entities": [],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "7e331cbac35dde42",
+    "headlineText": "Egy édesanya reagált a botrányos tiszás kampányeseményre",
+    "label": "Belpolitika / Közéleti konfliktus",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Tisza párt"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "bf3ad2a1e91f4fee",
+    "headlineText": "Orbán Viktor betekintést engedett a kulisszák mögé – Videó",
+    "label": "Belpolitika / Politikai kommunikáció",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "7601ae955255b413",
+    "headlineText": "Lázár: \"Közös célért. Magyarországért, miattunk\"",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Hazafias",
+    "entities": [
+      "Lázár János",
+      "Magyarország"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "4d2b5d6db3c091e1",
+    "headlineText": "Orbán Viktor mellett tett hitet az EDDA frontembere",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Orbán Viktor",
+      "EDDA"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "bce2a23018fc9d5a",
+    "headlineText": "KISZIVÁRGOTT TAYLOR SWIFT ÉS TRAVIS KELCE ESKÜVŐJÉNEK DÁTUMA ÉS HELYSZÍNE",
+    "label": "Bulvár / Szórakoztatás",
+    "sentiment": "Semleges / Szenzációhajhász",
+    "entities": [
+      "Taylor Swift",
+      "Travis Kelce"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "3ce0b0584c1af20c",
+    "headlineText": "AMIT FELÉPÍTETTÜNK MEGVÉDHETŐ,ÉS TOVÁBB ÉPÍTHETŐ.",
+    "label": "Belpolitika / Kampányretorika",
+    "sentiment": "Pozitív / Magabiztos",
+    "entities": [],
+    "confidence": 0.88
+  },
+  {
+    "hashedId": "942f5ed95298124d",
+    "headlineText": "YOUNG G BÉCI SZERINT HAZUDTAK A RENDSZERBONTÓ KONCERT KÖLTSÉGEIRŐL",
+    "label": "Bulvár / Közélet",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Young G Béci"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "ec30e126915a44ec",
+    "headlineText": "ORBÁN VIKTOR: BALASSAGYARMATON PIACOLUNK, ÉS BEGYŰJTÜNK PÁR KÉZFOGÁST",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Orbán Viktor",
+      "Balassagyarmat"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "00451e6026a75460",
+    "headlineText": "EGYMILLIÓ KÉZFOGÁS: DÜBÖRÖG ORBÁN VIKTOR KAMPÁNYZÁRÓ KÖRÚTJA – GALÉRIA",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Dinamikus",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "1ddece22ad03dcad",
+    "headlineText": "DANNY BLUE MÁR TUDJA, HOGY KI FOG NYERNI ÁPRILIS 12-ÉN",
+    "label": "Bulvár / Ezotéria",
+    "sentiment": "Semleges / Szenzációhajhász",
+    "entities": [
+      "Danny Blue"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "1cb743cac3dd83c2",
+    "headlineText": "SZERENCSÉS IDŐSZAK ELÉ NÉZHET EZ A 3 CSILLAGJEGY",
+    "label": "Életmód / Ezotéria",
+    "sentiment": "Pozitív / Reménykeltő",
+    "entities": [],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "9ada28feafff6cf8",
+    "headlineText": "IRÁN EGYETLEN KÁRTYÁJA A HORMUZI-SZOROST ÉRINTŐ ZSAROLÁS",
+    "label": "Külpolitika / Geopolitika",
+    "sentiment": "Negatív / Riasztó",
+    "entities": [
+      "Irán",
+      "Hormuzi-szoros"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "7a623b61fa049c1e",
+    "headlineText": "II. ERZSÉBET KIRÁLYNŐ ÍGY BÁNT A DÉDUNOKÁIVAL",
+    "label": "Bulvár / Királyi család",
+    "sentiment": "Semleges / Érzelmes",
+    "entities": [
+      "II. Erzsébet"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "fd77461a2f35ec45",
+    "headlineText": "A választás tétje, hogy Orbán Viktor vagy Zelenszkij alakítson kormányt Magyarországon",
+    "label": "Belpolitika / Kampányretorika",
+    "sentiment": "Negatív / Polarizáló",
+    "entities": [
+      "Orbán Viktor",
+      "Zelenszkij",
+      "Magyarország"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "6f1bce00c35e58f4",
+    "headlineText": "Pataky Attila tudja mi a biztos választás",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Pataky Attila"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "7e9dd65a28e75724",
+    "headlineText": "Ifj. Lomnici Zoltán: Most össze kell fognunk, hogy a nemzeti kormányt támogassuk",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Mozgósító",
+    "entities": [
+      "Ifj. Lomnici Zoltán"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "0d4a3f7db4b6e663",
+    "headlineText": "VÉDETT ÁR: EKKORA KÜLÖNBSÉGET JELENT MA TANKOLÁSNÁL",
+    "label": "Gazdaság / Fogyasztóvédelem",
+    "sentiment": "Semleges / Informatív",
+    "entities": [],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "b5a219e706c0ce4f",
+    "headlineText": "HIHETETLEN HANGULATBAN VÁRTÁK ORBÁN VIKTORT VÁCON - VIDEÓ",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Ünneplő",
+    "entities": [
+      "Orbán Viktor",
+      "Vác"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "80b66b0fe04d8692",
+    "headlineText": "AZ UKRÁN DIÁKONAK MEG ELL TANULNIUK A LŐFEGYVERHASZNÁLATOT",
+    "label": "Külpolitika / Háborús hatás",
+    "sentiment": "Negatív / Riasztó",
+    "entities": [
+      "Ukrajna"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "6966cdfed31def96",
+    "headlineText": "Orbán Viktor: Magyarországnak most összefogásra, egységre és biztonságra van szüksége",
+    "label": "Belpolitika / Kormányzati kommunikáció",
+    "sentiment": "Pozitív / Stabilizáló",
+    "entities": [
+      "Orbán Viktor",
+      "Magyarország"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "751ef135d6a1d2bc",
+    "headlineText": "Dopeman tudja, kire szavaz április 12-én",
+    "label": "Közélet / Választási kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Dopeman"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "77ae466c048e9336",
+    "headlineText": "LÁZÁR JÁNOS: KI KELL MARADNUNK A HÁBORÚBÓL!",
+    "label": "Külpolitika / Biztonságpolitika",
+    "sentiment": "Sürgető / Határozott",
+    "entities": [
+      "Lázár János"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "fd76617bfd05c935",
+    "headlineText": "SZABÓ ZSÓFI CSAK EGYET KÉR MINDEN VÁLASZTÓPOLGÁRTÓL",
+    "label": "Bulvár / Közélet",
+    "sentiment": "Semleges / Figyelemfelkeltő",
+    "entities": [
+      "Szabó Zsófi"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "46a45834565024cf",
+    "headlineText": "EGYMILLIÓ KÉZFOGÁS: ORBÁN VIKTOR MÁR ÚTON VAN A KÖVETKEZŐ ÁLLOMÁSRA",
+    "label": "Belpolitika / Kampányesemény",
+    "sentiment": "Pozitív / Aktivizáló",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "c8f891141e76a66a",
+    "headlineText": "KUNU MÁRIÓ ELÁRULTA, MIÉRT SZAVAZ ORBÁN VIKTORRA - VIDEÓ",
+    "label": "Közélet / Választási kampány",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Kunu Márió",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "f52c58af4c615287",
+    "headlineText": "SZIJJÁRTÓ PÉTER KOMOLY HÍREKET KÖZÖLT - VIDEÓ",
+    "label": "Külpolitika / Kormányzati kommunikáció",
+    "sentiment": "Semleges / Figyelemfelkeltő",
+    "entities": [
+      "Szijjártó Péter"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "aeb4046247276643",
+    "headlineText": "SÚLYOS VÁD, CSALÁSSAL LEHET BAJNOK CRISTIANO RONALDO",
+    "label": "Sport / Hírek",
+    "sentiment": "Negatív / Szenzációhajhász",
+    "entities": [
+      "Cristiano Ronaldo"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "579f9dfe1d524485",
+    "headlineText": "Négyszázezer magyar kénytelen úgy szavazni, hogy azt a törvény betűje nem is engedné, de mivel a Fidesz engedi, így marad a furcsa helyzet",
+    "label": "Belpolitika / Választási jog",
+    "sentiment": "Kritikus / Aggályos",
+    "entities": [
+      "Fidesz"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "ba9fe1b8faebcb90",
+    "headlineText": "Videó: Felcsúton akart forgatni az ír youtuber, 5 perc múlva megjelentek a rendőrök",
+    "label": "Közélet / Események",
+    "sentiment": "Kritikus / Ironikus",
+    "entities": [
+      "Felcsút"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "dbbbe4a174c9c739",
+    "headlineText": "Orbán utcára küldte híveit kezet fogni",
+    "label": "Belpolitika / Kampánytevékenység",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "ee79ab0515185590",
+    "headlineText": "Kronen Zeitung: Orbán felperzselt földet hagy hátra",
+    "label": "Külpolitika / Nemzetközi sajtó",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Orbán Viktor",
+      "Kronen Zeitung"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "d15f6497bd932b93",
+    "headlineText": "A Tiszának sokkal több szavazatszámlálója lesz, mint a Fidesznek",
+    "label": "Belpolitika / Választási előkészületek",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Tisza Párt",
+      "Fidesz"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "a121221be2b27e0c",
+    "headlineText": "Török Gábor leírta, mire számít Sulyok Tamástól, ha a Tisza nyeri a választást",
+    "label": "Belpolitika / Elemzés",
+    "sentiment": "Semleges / Elemző",
+    "entities": [
+      "Török Gábor",
+      "Sulyok Tamás",
+      "Tisza Párt"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "159684d140caa06d",
+    "headlineText": "Szombat délelőtt 11-kor elkezdődött az országgyűlési választás",
+    "label": "Közélet / Választás",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [],
+    "confidence": 1
+  },
+  {
+    "hashedId": "3e6dbedb9b969d06",
+    "headlineText": "Megdőlt a hidegrekord hajnalban, több helyen mínusz 6 foknál hidegebbet mértek",
+    "label": "Időjárás / Hírek",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "b8dcf6ae6512ead5",
+    "headlineText": "HÖOK: a hallgatók közel fele fizetett munkavállalás nélkül nem engedhetné meg magának, hogy tanuljon",
+    "label": "Társadalom / Oktatáspolitika",
+    "sentiment": "Negatív / Aggasztó",
+    "entities": [
+      "HÖOK"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "1c5d811fd7b28030",
+    "headlineText": "Pálinkás Szilveszter és Szabó Bence együtt léptek színpadra a rendszerbontó koncerten, ezt üzenték",
+    "label": "Közélet / Kultúra",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Pálinkás Szilveszter",
+      "Szabó Bence"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "9bb2c0f60af9ac67",
+    "headlineText": "Többen árulónak tartják ECKÜ-t a herés beszólása miatt: a Fidesz malmára hajtotta a vizet?",
+    "label": "Közélet / Politikai elemzés",
+    "sentiment": "Kritikus / Vitaindító",
+    "entities": [
+      "ECKÜ",
+      "Fidesz"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "f76d02ef9dfbef08",
+    "headlineText": "Trump ismét üzent: a teljes gazdasági erejével és hatalmával beáll Orbán mögé",
+    "label": "Külpolitika / Nemzetközi kapcsolatok",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Donald Trump",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "1135ce1989a3e044",
+    "headlineText": "Elárulta a miniszterelnök Rónai Egonnak, mit mutatnak a belső méréseik",
+    "label": "Belpolitika / Választási kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Rónai Egon"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "7af4611269c54499",
+    "headlineText": "Ez az új iPhone-os csalás lenullázhatja a bankszámlákat – szakértők figyelmeztetnek",
+    "label": "Technológia / Biztonság",
+    "sentiment": "Negatív / Figyelmeztető",
+    "entities": [
+      "iPhone"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "581f6c74d6b5c058",
+    "headlineText": "Riasztó betegséget okoznak a népszerű ételek, állatról emberre terjedhet a kór",
+    "label": "Egészségügy / Hírek",
+    "sentiment": "Negatív / Riasztó",
+    "entities": [],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "183c2e48edd4e5d0",
+    "headlineText": "Andrej Babis cseh kormányfő támogatásáról biztosította Orbán Viktort",
+    "label": "Külpolitika / Nemzetközi kapcsolatok",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Andrej Babis",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "cbef3feb19a5cae1",
+    "headlineText": "Tápai Szabina számára nem kérdés, hogy a keresztény értékeket támogatja, ezért is szavaz Orbán Viktorra és a Fidesz–KDNP-re",
+    "label": "Közélet / Választási kampány",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Tápai Szabina",
+      "Orbán Viktor",
+      "Fidesz-KDNP"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "0691909fb8c03d46",
+    "headlineText": "Oberfrank Pál világossá tette, kire szavaz vasárnap",
+    "label": "Közélet / Választási kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Oberfrank Pál"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "57d85de600c82ecf",
+    "headlineText": "Magyar Péter zárt ajtók mögött nagyon nagy háborúra készül, a nyilvánosságban ezt persze tagadja a Tisza – megjelent az új Mesterterv",
+    "label": "Belpolitika / Kampányretorika",
+    "sentiment": "Kritikus / Agresszív",
+    "entities": [
+      "Magyar Péter",
+      "Tisza Párt"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "377fe3294f803fe7",
+    "headlineText": "ORFK: A rendőrség felkészült a választásra",
+    "label": "Közélet / Választás",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "ORFK"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "a70b2ecbbfe4dec4",
+    "headlineText": "Felsorolt néhány példát Nagy Tímea olimpiai bajnok vívó, hogy miért szavaz Orbán Viktorra",
+    "label": "Közélet / Választási kampány",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Nagy Tímea",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "589ced59ffb4a341",
+    "headlineText": "Orbán Viktor reagált Trump üzenetére: Ha barátokat gyűjtesz, baj esetén lesz, kire számíts",
+    "label": "Külpolitika / Nemzetközi kapcsolatok",
+    "sentiment": "Pozitív / Diplomáciai",
+    "entities": [
+      "Orbán Viktor",
+      "Donald Trump"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "16f1dd2e2f3721f4",
+    "headlineText": "Amerikai képviselők bírálták Brüsszelt, amiért beavatkoznak a magyar választásokba",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Kritikus / Feszült",
+    "entities": [
+      "USA",
+      "Brüsszel",
+      "Magyarország"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "dfffb81b2a1e9a48",
+    "headlineText": "Tizenkilenc évre ítélték Pavel Popov volt orosz védelmi miniszter-helyettest",
+    "label": "Nemzetközi hírek / Igazságszolgáltatás",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Pavel Popov",
+      "Oroszország"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "690de9b81e31c131",
+    "headlineText": "Menczer Tamás: Megnyerjük a választást, aztán dolgozunk tovább Magyarországért – Ti meg lóbálhattok azt, amit akartok",
+    "label": "Belpolitika / Kampányretorika",
+    "sentiment": "Agresszív / Konfrontatív",
+    "entities": [
+      "Menczer Tamás",
+      "Magyarország"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "f4ecce33a39c0086",
+    "headlineText": "„A kettőjük kémiája nem működik jól“ – Varga Barnabás és Luka Jovics még nem talált összhangot az AEK Athénban",
+    "label": "Sport / Labdarúgás",
+    "sentiment": "Elemző / Kritikus",
+    "entities": [
+      "Varga Barnabás",
+      "Luka Jovics",
+      "AEK Athén"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "382e9d23a13ea23f",
+    "headlineText": "75 éves a Magyar Állami Népi Együttes",
+    "label": "Kultúra / Jubileum",
+    "sentiment": "Pozitív / Ünnepi",
+    "entities": [
+      "Magyar Állami Népi Együttes"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "06f2367c36706fdf",
+    "headlineText": "Penta Essentia | Memento 1526",
+    "label": "Kultúra / Művészet",
+    "sentiment": "Semleges",
+    "entities": [
+      "Penta Essentia",
+      "Memento 1526"
+    ],
+    "confidence": 0.85
+  },
+  {
+    "hashedId": "1057db31bbc633cc",
+    "headlineText": "A magyar költészet napja | Barna Zsombor és Mózes András",
+    "label": "Kultúra / Irodalom",
+    "sentiment": "Pozitív / Ünnepi",
+    "entities": [
+      "Magyar költészet napja",
+      "Barna Zsombor",
+      "Mózes András"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "f0218208d80ef3e0",
+    "headlineText": "Palladio Orchestra | Aréna koncert",
+    "label": "Kultúra / Zene",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Palladio Orchestra",
+      "Aréna"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "b8feac678bb8367e",
+    "headlineText": "A magyar költészet napja | Szirtes Edina Mókus",
+    "label": "Kultúra / Irodalom",
+    "sentiment": "Pozitív / Ünnepi",
+    "entities": [
+      "Magyar költészet napja",
+      "Szirtes Edina Mókus"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "9bf71adee93b365d",
+    "headlineText": "Ma van az Egymillió kézfogás napja - mindenki Orbán Viktorral akar találkozni",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Propagandisztikus",
+    "entities": [
+      "Egymillió kézfogás napja",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "98d58a062a653a10",
+    "headlineText": "Egymillió kézfogás napja: mutatjuk az eddigi legjobb pillanatokat - Galéria",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Propagandisztikus",
+    "entities": [
+      "Egymillió kézfogás napja"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "fa3ee279e67ad361",
+    "headlineText": "Orbán Viktor videón mutatta meg: elképesztő a hangulat a kampánybuszban",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Propagandisztikus",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "18d509c6d65ecce4",
+    "headlineText": "Egymillió kézfogás napja: fontos számokat közölt Szijjártó Péter",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Egymillió kézfogás napja",
+      "Szijjártó Péter"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "a5165420e5063aa8",
+    "headlineText": "Egészen elképesztő: nincs olyan négyzetméter, ahol Orbán Viktorral ne fognának kezet",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Propagandisztikus",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "39ac1e582c9dbaaf",
+    "headlineText": "Lázár János elárulta a jó mozgósítás titkát - Videó",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Lázár János"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "c9298074a8e3725a",
+    "headlineText": "Ezt látnod kell: így fogadta Nagy Feró Orbán Viktort Vácon",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Propagandisztikus",
+    "entities": [
+      "Nagy Feró",
+      "Orbán Viktor",
+      "Vác"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "3ab32ff2557ac717",
+    "headlineText": "Bordóban hódít Monica Bellucci – 61 évesen is az elegancia királynője",
+    "label": "Bulvár / Életmód",
+    "sentiment": "Pozitív / Elismerő",
+    "entities": [
+      "Monica Bellucci"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "de0223dc2ef69ce2",
+    "headlineText": "„Én az életre szavazok!” – Orbán Viktor mellett tett hitet az EDDA frontembere",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Elkötelezett",
+    "entities": [
+      "Orbán Viktor",
+      "EDDA"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "db08566e11418006",
+    "headlineText": "Százmilliók a hergelésre? Young G Béci szerint hazudtak a Tiszás kampányesemény költségeiről",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Kritikus / Vádaskodó",
+    "entities": [
+      "Young G Béci",
+      "Tisza párt"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "c3743f8d099f0e63",
+    "headlineText": "Miss Mood egy ágyban alszik kedvenceivel",
+    "label": "Bulvár / Életmód",
+    "sentiment": "Semleges / Szórakoztató",
+    "entities": [
+      "Miss Mood"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "e2f9e7ce1e162fce",
+    "headlineText": "Focisérülésnek hitték, agresszív csontrákban szenvedett a fiatal fiú",
+    "label": "Egészségügy / Tragédia",
+    "sentiment": "Erősen negatív / Szomorú",
+    "entities": [
+      "csontrák"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "53f72077d9167888",
+    "headlineText": "Danny Blue már tudja, hogy ki fog nyerni április 12-én",
+    "label": "Bulvár / Politika",
+    "sentiment": "Rejtélyes / Figyelemfelkeltő",
+    "entities": [
+      "Danny Blue"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "hashedId": "0819e449599e2200",
+    "headlineText": "Szijjártó Péter a kampánybuszon kapta a hírt: meg is mutatta miről van szó",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Szijjártó Péter"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "30bc908460c781b6",
+    "headlineText": "Szabó Zsófi csak egyet kér minden választópolgártól",
+    "label": "Bulvár / Politika",
+    "sentiment": "Figyelemfelkeltő",
+    "entities": [
+      "Szabó Zsófi"
+    ],
+    "confidence": 0.85
+  },
+  {
+    "hashedId": "701b770882d32def",
+    "headlineText": "Pár hónapot adtak az orvosok az édesapának – több rák is megtámadta a testét",
+    "label": "Egészségügy / Tragédia",
+    "sentiment": "Erősen negatív / Szomorú",
+    "entities": [
+      "rák"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "24f3a57aa7542f34",
+    "headlineText": "Kunu Márió teljes mellszélességgel a kimaradás mellett: elárulta, miért szavaz Orbán Viktorra - Videó",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Pozitív / Elkötelezett",
+    "entities": [
+      "Kunu Márió",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "36ee0850cd2ed1e5",
+    "headlineText": "Kiderült: ennyit spórolhatunk ma a védett üzemanyagárnak köszönhetően",
+    "label": "Gazdaság / Közpolitika",
+    "sentiment": "Pozitív / Tájékoztató",
+    "entities": [
+      "üzemanyagár"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "5ef326a80b13681c",
+    "headlineText": "Párkapcsolati szakértőhöz fordult a férfi, miután párja többé nem volt bevállalós",
+    "label": "Életmód / Párkapcsolat",
+    "sentiment": "Semleges / Tanácsadó",
+    "entities": [],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "369a9ee07b1dd2c8",
+    "headlineText": "„Őrizzük meg Orbán és Trump emlékét, mint egy tanmesét arról, hogy mit ne tegyünk a politikában”",
+    "label": "Belpolitika / Kritika",
+    "sentiment": "Kritikus / Ironikus",
+    "entities": [
+      "Orbán Viktor",
+      "Donald Trump"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "623a697e8c2b6799",
+    "headlineText": "Orbán Viktor: Megindítjuk az egymillió kézfogás nevű akciósorozatunkat",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Orbán Viktor",
+      "Egymillió kézfogás"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "0dfcc3e73d528c42",
+    "headlineText": "Megint Orbán Viktor mellett kampányol Donald Trump",
+    "label": "Külpolitika / Választási kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Orbán Viktor",
+      "Donald Trump"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "f39f7fb590392752",
+    "headlineText": "Szombat reggelig a levélben szavazásra jogosultak több mint fele már leadta szavazatát",
+    "label": "Választások / Közélet",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "választás"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "477d1b2445da2bbe",
+    "headlineText": "Feljelentették a Tisza Párt mellett kampányoló heremutogatót – sajtóhír",
+    "label": "Belpolitika / Botrány",
+    "sentiment": "Negatív / Szenzációhajhász",
+    "entities": [
+      "Tisza Párt"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "1cffc8475f148871",
+    "headlineText": "„Vasárnap kinyírjuk őket” – ebből fél perc is sok, így épül a Tisza szeretetországa (VIDEÓ)",
+    "label": "Belpolitika / Kampányretorika",
+    "sentiment": "Erősen negatív / Kritikus",
+    "entities": [
+      "Tisza Párt"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "c089a90223875cd1",
+    "headlineText": "„Trump bejelentése is bizonyítja, hogy…” – a legfontosabb dologra hívta fel a figyelmet Szijjártó Péter (VIDEÓ)",
+    "label": "Külpolitika / Kormányzati kommunikáció",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Donald Trump",
+      "Szijjártó Péter"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "b1f516c9071c2041",
+    "headlineText": "Friss hírek a választókerületekből: beütött a Tisza Pártnak a vállalhatatlan heremutogatás",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Tisza Párt"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "3441dfa73b3ff172",
+    "headlineText": "Veszélyes, amit az ellenzék ajánl – lerántotta a leplet Brüsszel B-tervéről Orbán Balázs (VIDEÓ)",
+    "label": "Belpolitika / Kormányzati kommunikáció",
+    "sentiment": "Negatív / Riasztó",
+    "entities": [
+      "Brüsszel",
+      "Orbán Balázs"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "22df07e3201a00e6",
+    "headlineText": "Már Amerikában is tudni akarják, kiket támogat Ursula von der Leyen, hogy beavatkozzanak a magyar választásokba",
+    "label": "Külpolitika / Választási beavatkozás",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Ursula von der Leyen",
+      "Magyarország"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "fcd00cc3138c035c",
+    "headlineText": "Kifakadt Terézváros polgármestere: elárasztotta a szemét és a vizelet az utcákat Puzsérék rendezvénye után",
+    "label": "Helyi közélet / Társadalmi hatás",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Terézváros",
+      "Puzsér Róbert"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "a00ea1b906886b71",
+    "headlineText": "Orbán Viktor szerint Magyar Péterék kampánya inkább a Fidesznek segít, mint a Tisza Pártnak (VIDEÓ)",
+    "label": "Belpolitika / Választási stratégia",
+    "sentiment": "Semleges / Elemző",
+    "entities": [
+      "Orbán Viktor",
+      "Magyar Péter",
+      "Fidesz",
+      "Tisza Párt"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "23123f6f467e60aa",
+    "headlineText": "Radics Béci barátunkat megharapták, széttépték, felgyújtották",
+    "label": "Bulvár / Bűnügy",
+    "sentiment": "Erősen negatív / Sokkoló",
+    "entities": [
+      "Radics Béci"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "3421790f03cccb29",
+    "headlineText": "Betelt a hócipő: már a tiszásoknak is elegük van Magyar Péter újabb hazugságaiból (VIDEÓ)",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Magyar Péter",
+      "Tisza Párt"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "3808de95dbfc9469",
+    "headlineText": "„Kiesik a protkója a szájából” – Székesfehérváron is megcsillant a tiszás szeretetország (VIDEÓ)",
+    "label": "Belpolitika / Kampányretorika",
+    "sentiment": "Negatív / Gúnyos",
+    "entities": [
+      "Székesfehérvár",
+      "Tisza Párt"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "eb5c48b5bf414a82",
+    "headlineText": "Amerikai szenátorok hivatalos levélben kérték számon von der Leyent Magyarország miatt",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Ursula von der Leyen",
+      "Magyarország"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "ac69398f70bc4a74",
+    "headlineText": "Áradt a gyűlölet Puzsérék rendezvénye után, az ellenzéki sajtó azonban erről mélyen hallgat",
+    "label": "Médiaelemzés / Politika",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Puzsér Róbert"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "hashedId": "47957f31c9db6ac8",
+    "headlineText": "Ismét az illegális versenyzés okozhatta az Árpád hídnál történt halálos tömegbalesetet",
+    "label": "Bűnügy / Közlekedés",
+    "sentiment": "Negatív / Tragikus",
+    "entities": [
+      "Árpád híd"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "6e9d28057c0678ce",
+    "headlineText": "Deák Dániel leleplezte a Mediánt, Magyar Péterék brutális összeget fizetnének Hann Endrének + videó",
+    "label": "Belpolitika / Politikai botrány",
+    "sentiment": "Negatív / Leleplező",
+    "entities": [
+      "Deák Dániel",
+      "Medián",
+      "Magyar Péter",
+      "Hann Endre"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "bfc71b0934344c77",
+    "headlineText": "Megérkezett a legutolsó szög is Magyar Péter közéleti koporsójába",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Negatív / Ellenséges",
+    "entities": [
+      "Magyar Péter"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "9127d513279f7537",
+    "headlineText": "A magyar válogatott óriási bravúrja, az elit kapujában a történelmi franciaverés után",
+    "label": "Sport",
+    "sentiment": "Pozitív / Ünneplő",
+    "entities": [
+      "magyar válogatott"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "hashedId": "423ab49586cd676f",
+    "headlineText": "Világrekordot döntött Reviczky Gábor, ennek kapcsán üzent Orbán Viktornak",
+    "label": "Közélet / Kultúra",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Reviczky Gábor",
+      "Orbán Viktor"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "c9fbac360ef1486b",
+    "headlineText": "Ismételt epizód – az előrejelzés újragondolása",
+    "label": "Gazdaság / Elemzés",
+    "sentiment": "Semleges",
+    "entities": [],
+    "confidence": 0.85
+  },
+  {
+    "hashedId": "1a1d55f4b19e9e05",
+    "headlineText": "Nem várt fordulat jöhet Magyar Péter telefonlopási ügyében",
+    "label": "Belpolitika / Bűnügy",
+    "sentiment": "Semleges / Érdeklődő",
+    "entities": [
+      "Magyar Péter"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "22c324d07be58e3c",
+    "headlineText": "Drogos sz…rjankó ez mind",
+    "label": "Közélet / Politikai gyűlöletbeszéd",
+    "sentiment": "Erősen negatív / Agreszív",
+    "entities": [],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "961284b7e237b7ab",
+    "headlineText": "„Ati bácsi” és a Tisza",
+    "label": "Belpolitika / Közélet",
+    "sentiment": "Semleges",
+    "entities": [
+      "Tisza Párt"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "hashedId": "1ec3e0b058a3f42f",
+    "headlineText": "Ez az ország beelőzte Európát az energiatárolási versenyben",
+    "label": "Gazdaság / Energia",
+    "sentiment": "Pozitív / Büszke",
+    "entities": [
+      "Európa"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "6db8ebbcd8212e76",
+    "headlineText": "Nem akárki mondta ki: a Fidesz vezet, a Tisza pedig nem tud majd kormányt alakítani",
+    "label": "Belpolitika / Választási esélylatolgatás",
+    "sentiment": "Semleges / Elemző",
+    "entities": [
+      "Fidesz",
+      "Tisza Párt"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "c9f3d0e2b89407ec",
+    "headlineText": "Zelenszkij súlyos hibát követett el, a semmiből nekirontott Trumpnak: \"Bíznak Putyinban és ez szégyen\" – kevesen tehetik meg a világon azt, amit az ukrán elnök",
+    "label": "Külpolitika / Háborús diplomácia",
+    "sentiment": "Negatív / Kritikus",
+    "entities": [
+      "Zelenszkij",
+      "Donald Trump",
+      "Putyin"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "1d92ef5faa57380c",
+    "headlineText": "Meglepő döntés: Európában először engedélyezték a Tesla önvezető technológiáját",
+    "label": "Technológia / Gazdaság",
+    "sentiment": "Pozitív / Innovatív",
+    "entities": [
+      "Tesla",
+      "Európa"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "38e6fc81163844e0",
+    "headlineText": "Hivatalos: óriáskikötő épül a Balatonon, megszólalt a település polgármestere – 200 hajót várnak",
+    "label": "Gazdaság / Turizmus",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Balaton"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "18723b282a64a2d8",
+    "headlineText": "Sírnak a shortosok, ha szárnyal az OTP - áprilisi tréfa lett a turbó warrant",
+    "label": "Gazdaság / Tőzsde",
+    "sentiment": "Semleges / Szakmai",
+    "entities": [
+      "OTP"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "d89f3f8b27b0afbf",
+    "headlineText": "Ukrajna nyíltan be akar avatkozni a holnapi választásba",
+    "label": "Külpolitika / Választási kampány",
+    "sentiment": "Negatív / Riasztó",
+    "entities": [
+      "Ukrajna",
+      "választás"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "3abe833c743e22f4",
+    "headlineText": "Lázadás herével, nihil és gyűlölet, ez volt a rendszerbontás Puzsér-módra",
+    "label": "Közélet / Kritika",
+    "sentiment": "Kritikus / Provokatív",
+    "entities": [
+      "Puzsér Róbert"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "51ada507b2f05ed2",
+    "headlineText": "Orbán Viktor: megindítjuk az egymillió kézfogás nevű akciósorozatunkat",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "dd530f529b97389e",
+    "headlineText": "Szijjártó: az amerikai kormány a teljes gazdasági erejével készen áll Orbán Viktor támogatására",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Szijjártó Péter",
+      "Orbán Viktor",
+      "USA"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "1bd05ad8b6f8f33f",
+    "headlineText": "Jó hírt kapott a kormány a választási hajrában, de a gazdaság még nem ünnepelhet",
+    "label": "Gazdaság / Politika",
+    "sentiment": "Óvatosan optimista",
+    "entities": [
+      "kormány",
+      "gazdaság"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "hashedId": "67cd72322e109843",
+    "headlineText": "Durva időjárás köszöntött Magyarországra a választások előtti utolsó pillanatban: olyan dolog történt, ami még soha",
+    "label": "Belföld / Időjárás",
+    "sentiment": "Szenzációhajhász",
+    "entities": [
+      "Magyarország"
+    ],
+    "confidence": 0.85
+  },
+  {
+    "hashedId": "3a8c8d5bb617f991",
+    "headlineText": "MEGSZÓLALT A RENDŐRSÉG: ÍGY KÉSZÜLNEK A VÁLASZTÁSRA",
+    "label": "Közbiztonság / Választás",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Rendőrség"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "042b549823ab8e40",
+    "headlineText": "Itthon is kapható a Fiat legkisebb, legnyomibb, legcukibb \"autója\"!",
+    "label": "Életmód / Autó",
+    "sentiment": "Pozitív / Könnyed",
+    "entities": [
+      "Fiat"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "e804fac3c7bd6042",
+    "headlineText": "Olyat mondott a kínai elnök, amitől mindenki ledöbbent",
+    "label": "Külpolitika",
+    "sentiment": "Szenzációhajhász",
+    "entities": [
+      "kínai elnök"
+    ],
+    "confidence": 0.8
+  },
+  {
+    "hashedId": "1315aaccb10557e2",
+    "headlineText": "Az Adidas szupersztárokat keresett a kampányához: vajon elég a híresség jelenléte a sikerhez?",
+    "label": "Üzlet / Marketing",
+    "sentiment": "Semleges / Elemző",
+    "entities": [
+      "Adidas"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "0a40dd46dc3d596d",
+    "headlineText": "Orbán Viktor kampánybuszát megrohamozták: egymillió kézfogást kért a miniszterelnök",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Drámai",
+    "entities": [
+      "Orbán Viktor"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "cb4ddbc651b6f9e3",
+    "headlineText": "Orbán Viktor maga is alig hitte el, mit tett az éjjel Trump Magyarországgal: „Jó, hát ez az, amit mondunk”",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Pozitív / Támogató",
+    "entities": [
+      "Orbán Viktor",
+      "Donald Trump",
+      "Magyarország"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "6a0b9fd0e0b9042d",
+    "headlineText": "Az orosz olaj maradhat tovább a piacon, Washington meghosszabbíthatja a mentességet",
+    "label": "Gazdaság / Energia",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Oroszország",
+      "Washington",
+      "olaj"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "ef7cf62c89d45548",
+    "headlineText": "Szijjártó szerint Trump támogató üzenete minden magyar pénztárcáján látszani fog",
+    "label": "Gazdaság / Politika",
+    "sentiment": "Pozitív / Ígéretes",
+    "entities": [
+      "Szijjártó Péter",
+      "Donald Trump"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "c79ce6c17454371b",
+    "headlineText": "Április 11-én kisvasúti nappal ünnepli születésnapját a budapesti Gyermekvasút",
+    "label": "Kultúra / Programajánló",
+    "sentiment": "Pozitív / Ünnepi",
+    "entities": [
+      "Gyermekvasút"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "1800c3a8bae74e7b",
+    "headlineText": "Új videó került elő Magyar Péter ötkertes verekedéséről, Radnai Márk grimasza mindent visz + videó",
+    "label": "Belpolitika / Botrány",
+    "sentiment": "Kritikus / Szenzációhajhász",
+    "entities": [
+      "Magyar Péter",
+      "Radnai Márk"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "df9c386d13bd97a6",
+    "headlineText": "Hann Endre és az időgép",
+    "label": "Közélet / Elemzés",
+    "sentiment": "Ironikus",
+    "entities": [
+      "Hann Endre"
+    ],
+    "confidence": 0.75
+  },
+  {
+    "hashedId": "d00497a86ad8313b",
+    "headlineText": "A magyar válogatott óriási bravúrja, az elit kapujában a történelmi franciaverés után",
+    "label": "Sport",
+    "sentiment": "Pozitív / Büszke",
+    "entities": [
+      "magyar válogatott"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "4792c77ccae19807",
+    "headlineText": "Lázár János is kampányhajrázik",
+    "label": "Belpolitika / Kampány",
+    "sentiment": "Semleges",
+    "entities": [
+      "Lázár János"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "eb6994cb89e82246",
+    "headlineText": "Veszélyes képességű mesterséges intelligencia tűnt elő a semmiből, azonnal valóságos pánikot okozott",
+    "label": "Technológia",
+    "sentiment": "Negatív / Riasztó",
+    "entities": [
+      "mesterséges intelligencia"
+    ],
+    "confidence": 0.85
+  },
+  {
+    "hashedId": "35e91ce4311bc5a9",
+    "headlineText": "VÁRATLANUL BEMONDTA IRÁN: EGYETLEN DOLGOT KELL TENNIE AMERIKÁNAK ÉS LÉTREJÖN A BÉKEMEGÁLLAPODÁS",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Reménykeltő",
+    "entities": [
+      "Irán",
+      "Amerika"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "0858432d5323fb33",
+    "headlineText": "A választási forgatókönyvek lehetséges piaci hatásairól elmélkednek az elemzők",
+    "label": "Gazdaság / Választás",
+    "sentiment": "Semleges / Elemző",
+    "entities": [
+      "választás"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "770d00798463d3b6",
+    "headlineText": "Béketárgyalások: közel lehet a fordulat, hatalmas nyomás nehezedik Iránra",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Feszült / Reménykeltő",
+    "entities": [
+      "Irán"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "ea8dfee2445f5c9b",
+    "headlineText": "Váratlan lépés az Egyesült Államoktól: komoly gesztust tesznek Iránnak, ez hatalmas ugrás lehet a béke felé",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Pozitív / Reménykeltő",
+    "entities": [
+      "Egyesült Államok",
+      "Irán"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "9986540665749acc",
+    "headlineText": "Átmeneti tűzszünet jön az ukrán fronton, erőt gyűjtenek az oroszok - Híreink az ukrajnai háborúról szombaton",
+    "label": "Külpolitika / Háború",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Ukrajna",
+      "Oroszország"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "7f79c413628e2d1d",
+    "headlineText": "Lépnek az elektromos rollerekkel szemben: kötelező lesz az irányjelző, bukósisak, csengő és fényvisszaverő Ausztriában",
+    "label": "Közlekedés / Jogszabály",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Ausztria",
+      "elektromos roller"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "92324fccf47fe715",
+    "headlineText": "Nehezen indulnak a béketárgyalások: Irán máris megvádolta Amerikát",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Negatív / Feszült",
+    "entities": [
+      "Irán",
+      "Amerika"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "78f2a081b916c3db",
+    "headlineText": "Mit mond el egy társadalomról, ha erősödik a készpénzhasználat?",
+    "label": "Gazdaság / Társadalom",
+    "sentiment": "Semleges / Elemző",
+    "entities": [
+      "készpénzhasználat"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "hashedId": "6def0dfeb134738c",
+    "headlineText": "Választás 2026: ezzel kevesen számolnak a szavazatok összesítése kapcsán, simán fordulhat a kocka",
+    "label": "Belpolitika / Választás",
+    "sentiment": "Izgalmat keltő",
+    "entities": [
+      "választás"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "hashedId": "b4b7b3c26effc6c5",
+    "headlineText": "Egyre közelebb a világ színpada a 19 éves magyar sznúkeresnek: megállíthatatlan Révész Bulcsú",
+    "label": "Sport",
+    "sentiment": "Pozitív / Büszke",
+    "entities": [
+      "Révész Bulcsú"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "b41c66fc2be6f32f",
+    "headlineText": "Komoly KRESZ-szigorítás élesedik májustól: csúnya bírságot kaphat, aki erről nem tud",
+    "label": "Közlekedés / Jogszabályváltozás",
+    "sentiment": "Figyelmeztető / Semleges",
+    "entities": [
+      "KRESZ",
+      "bírság"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "11a606acf2e297cc",
+    "headlineText": "Választás 2026: nagyon fontos határidő jár le hamarosan, ha még nem intézted el, most lépj!",
+    "label": "Belpolitika / Választási tájékoztatás",
+    "sentiment": "Sürgető / Informatív",
+    "entities": [
+      "Választás 2026"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "f4a1268cc2782ee3",
+    "headlineText": "Elképesztő, ami Magyarországon történt: évtizedes hidegrekord dőlt meg",
+    "label": "Időjárás / Közélet",
+    "sentiment": "Szenzációhajhász / Semleges",
+    "entities": [
+      "Magyarország",
+      "hidegrekord"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "hashedId": "bc0d887c486fe3e3",
+    "headlineText": "Így védhető ki az építkezési rémálom: ezzel sok fejfájástól megkíméled magad",
+    "label": "Életmód / Ingatlan",
+    "sentiment": "Segítő / Tanácsadó",
+    "entities": [
+      "építkezés"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "hashedId": "978f91e2576b2c5a",
+    "headlineText": "Tiszaburán átrendezték a polgármesteri hivatalt a fideszes élelmiszercsomagok miatt",
+    "label": "Belpolitika / Helyi közélet",
+    "sentiment": "Kritikus / Tényfeltáró",
+    "entities": [
+      "Tiszabura",
+      "Fidesz"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "hashedId": "63b48599c41f0bf7",
+    "headlineText": "A Kúria szerint sincs rendben, hogy óvodások vonultak „Nem leszünk ukrán gyarmat\" feliratú molinóval",
+    "label": "Belpolitika / Jogszolgáltatás",
+    "sentiment": "Kritikus / Objektív",
+    "entities": [
+      "Kúria"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "hashedId": "632ba1c67b9bb6f4",
+    "headlineText": "Szijjártó Péter: Az amerikai kormány készen áll arra, hogy Orbán Viktort támogassa",
+    "label": "Külpolitika / Diplomácia",
+    "sentiment": "Semleges / Tájékoztató",
+    "entities": [
+      "Szijjártó Péter",
+      "Orbán Viktor",
+      "amerikai kormány"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "hashedId": "05d34e11d0f021d9",
+    "headlineText": "Mészáros Lőrincék tárgyaltak a Bászna Gabona átvételéről",
+    "label": "Gazdaság / Üzleti hírek",
+    "sentiment": "Semleges",
+    "entities": [
+      "Mészáros Lőrinc",
+      "Bászna Gabona"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "hashedId": "685856bf818c57f2",
+    "headlineText": "Őszinte jókívánság odaátra",
+    "label": "Közélet / Gyász",
+    "sentiment": "Melankolikus / Tiszteletteljes",
+    "entities": [],
+    "confidence": 0.85
+  }
+]
