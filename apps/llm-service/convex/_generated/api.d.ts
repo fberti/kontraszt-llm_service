@@ -9,7 +9,9 @@
  */
 
 import type * as imports from "../imports.js";
+import type * as llm_analysis from "../llm_analysis.js";
 import type * as llm_service from "../llm_service.js";
+import type * as sync_state from "../sync_state.js";
 
 import type {
   ApiFromModules,
@@ -19,7 +21,9 @@ import type {
 
 declare const fullApi: ApiFromModules<{
   imports: typeof imports;
+  llm_analysis: typeof llm_analysis;
   llm_service: typeof llm_service;
+  sync_state: typeof sync_state;
 }>;
 
 /**

@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "vp exec convex dev",
     "deploy": "vp exec convex deploy",
+    "serve": "node --experimental-strip-types src/server.ts",
+    "run:sync": "node --experimental-strip-types scripts/run-sync.ts",
     "import:parquet": "node scripts/import-parquet.mjs",
     "call:llm": "node --experimental-strip-types scripts/call_llm.ts",
+    "save:convex": "node --experimental-strip-types scripts/save_to_convex.ts",
     "run:llm-service": "node scripts/run-llm-service.mjs"
   },
   "dependencies": {

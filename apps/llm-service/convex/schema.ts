@@ -2,28 +2,28 @@ import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
 
 export default defineSchema({
-  headlines: defineTable({
-    sourceCreationTime: v.number(),
-    hashedId: v.string(),
-    fontSize: v.number(),
-    height: v.number(),
-    score: v.number(),
-    scrapedAt: v.number(),
-    width: v.number(),
-    x: v.number(),
-    y: v.number(),
-  })
-    .index("by_hashedId", ["hashedId"])
-    .index("by_scrapedAt_and_hashedId", ["scrapedAt", "hashedId"]),
-
-  headlineDefinitions: defineTable({
-    sourceCreationTime: v.number(),
+  llmAnalysis: defineTable({
     hashedId: v.string(),
     headlineText: v.string(),
-    href: v.string(),
-    siteName: v.string(),
+    label: v.string(),
+    sentiment: v.string(),
+    sentiment_score: v.optional(v.number()),
+    entities: v.array(v.string()),
+    confidence: v.number(),
+    analyzedAt: v.number(),
   })
     .index("by_hashedId", ["hashedId"])
-    .index("by_siteName_and_hashedId", ["siteName", "hashedId"])
-    .index("by_sourceCreationTime", ["sourceCreationTime"]),
+    .index("by_hashedId_and_headlineText", ["hashedId", "headlineText"])
+    .index("by_analyzedAt_and_hashedId", ["analyzedAt", "hashedId"]),
+
+  syncState: defineTable({
+    key: v.string(),
+    sourceCursor: v.union(v.string(), v.null()),
+    isRunning: v.boolean(),
+    lastRunStartedAt: v.optional(v.number()),
+    lastRunFinishedAt: v.optional(v.number()),
+    lastWebhookId: v.optional(v.string()),
+    lastError: v.optional(v.string()),
+    updatedAt: v.number(),
+  }).index("by_key", ["key"]),
 });
