@@ -63,15 +63,41 @@ function buildPrompt(headlines: string[]) {
   return `Készíts elemzést a megadott headline-okból, és a választ kizárólag a lenti JSON Schema szerint add vissza.\n\nFontos:\n- Pontosan annyi elemet adj vissza, ahány headline-ot kaptál.\n- A \"headline\" mezőbe az eredeti headline kerüljön változtatás nélkül.\n- Az elemek sorrendje egyezzen meg a bemeneti headline-ok sorrendjével.\n- Az \"entities\" mindig string lista legyen.\n- Minden egyes headline-hoz tartozzon egy \"confidence\" mező is, amely lebegőpontos szám 0 és 1 között.\n- Értékeld a cím hangvételét 0 és 1 közötti pontszámmal (Sentiment Score), ahol a 0 teljesen negatív, az 1 pedig teljesen pozitív.\n- Ne adj vissza magyarázatot, csak érvényes JSON-t.\n\nJSON Schema:\n${JSON.stringify(topicModelSchema, null, 2)}\n\nHeadline-ok:\n${JSON.stringify(headlines, null, 2)}`;
 }
 
-function parseJsonFromModelContent(content: string): TopicModelResponse {
+function extractCandidateJson(content: string): string {
   const trimmed = content.trim();
 
   if (trimmed.startsWith("```") && trimmed.endsWith("```")) {
-    const withoutFence = trimmed.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "");
-    return JSON.parse(withoutFence) as TopicModelResponse;
+    return trimmed
+      .replace(/^```(?:json)?\s*/i, "")
+      .replace(/\s*```$/, "")
+      .trim();
   }
 
-  return JSON.parse(trimmed) as TopicModelResponse;
+  const fencedMatch = trimmed.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+  if (fencedMatch?.[1]) {
+    return fencedMatch[1].trim();
+  }
+
+  const firstBrace = trimmed.indexOf("{");
+  const lastBrace = trimmed.lastIndexOf("}");
+  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
+    return trimmed.slice(firstBrace, lastBrace + 1).trim();
+  }
+
+  return trimmed;
+}
+
+function parseJsonFromModelContent(content: string): TopicModelResponse {
+  const candidate = extractCandidateJson(content);
+
+  try {
+    return JSON.parse(candidate) as TopicModelResponse;
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    throw new Error(
+      `Failed to parse model JSON: ${message}\nModel content:\n${content.slice(0, 4000)}`,
+    );
+  }
 }
 
 function validateResponse(parsed: TopicModelResponse, headlines: string[]) {
@@ -110,46 +136,66 @@ async function requestTopicModel(
   headlines: string[],
 ): Promise<TopicModelResponse> {
   const prompt = buildPrompt(headlines);
+  const maxAttempts = 3;
 
-  const response = await fetch("https://api.kilo.ai/api/gateway/chat/completions", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model,
-      messages: [
-        {
-          role: "system",
-          content:
-            "Te egy precíz magyar nyelvű médiaszöveg-elemző vagy. Mindig kizárólag érvényes JSON-t adsz vissza.",
+  let lastError: unknown;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+    const response = await fetch("https://api.kilo.ai/api/gateway/chat/completions", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model,
+        messages: [
+          {
+            role: "system",
+            content:
+              "Te egy precíz magyar nyelvű médiaszöveg-elemző vagy. Mindig kizárólag érvényes JSON-t adsz vissza.",
+          },
+          { role: "user", content: prompt },
+        ],
+        response_format: {
+          type: "json_schema",
+          json_schema: {
+            name: "topic_model_response",
+            strict: true,
+            schema: topicModelSchema,
+          },
         },
-        { role: "user", content: prompt },
-      ],
-      temperature: 0.2,
-    }),
-  });
+        temperature: 0.2,
+      }),
+    });
 
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(
-      `Kilo API request failed: ${response.status} ${response.statusText}\n${errorText}`,
-    );
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(
+        `Kilo API request failed: ${response.status} ${response.statusText}\n${errorText}`,
+      );
+    }
+
+    const responseJson = (await response.json()) as {
+      choices?: Array<{ message?: { content?: string } }>;
+    };
+
+    const content = responseJson.choices?.[0]?.message?.content;
+    if (!content) {
+      throw new Error("Kilo API response did not contain message content.");
+    }
+
+    try {
+      const parsed = parseJsonFromModelContent(content);
+      validateResponse(parsed, headlines);
+      return parsed;
+    } catch (error) {
+      lastError = error;
+      console.warn(`Topic model attempt ${attempt}/${maxAttempts} failed:`, error);
+    }
   }
 
-  const responseJson = (await response.json()) as {
-    choices?: Array<{ message?: { content?: string } }>;
-  };
-
-  const content = responseJson.choices?.[0]?.message?.content;
-  if (!content) {
-    throw new Error("Kilo API response did not contain message content.");
-  }
-
-  const parsed = parseJsonFromModelContent(content);
-  validateResponse(parsed, headlines);
-  return parsed;
+  throw lastError instanceof Error ? lastError : new Error(String(lastError));
 }
 
 export async function analyzeHeadlines(input: InputHeadline[]): Promise<LlmAnalysisRow[]> {
