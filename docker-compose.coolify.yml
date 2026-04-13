@@ -1,0 +1,30 @@
+services:
+  llm-service:
+    build:
+      context: .
+      dockerfile: apps/llm-service/Dockerfile
+    environment:
+      PORT: ${PORT:-3000}
+      SOURCE_CONVEX_URL: ${SOURCE_CONVEX_URL}
+      TARGET_CONVEX_URL: ${TARGET_CONVEX_URL}
+      WEBHOOK_SECRET: ${WEBHOOK_SECRET}
+      KILO_API_KEY: ${KILO_API_KEY}
+      KILO_MODEL: ${KILO_MODEL}
+      SOURCE_PAGE_SIZE: ${SOURCE_PAGE_SIZE:-200}
+      MAX_SOURCE_PAGES_PER_RUN: ${MAX_SOURCE_PAGES_PER_RUN:-10}
+      CONVEX_SAVE_BATCH_SIZE: ${CONVEX_SAVE_BATCH_SIZE:-200}
+      SYNC_STATE_KEY: ${SYNC_STATE_KEY:-source-headline-definitions}
+    ports:
+      - "3000:3000"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000/healthz').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
