@@ -52,7 +52,7 @@ function getRequired(name: string): string {
   if (!value) {
     throw new Error(`Missing required environment variable: ${name}`);
   }
-  return value;
+  return value.trim();
 }
 
 function getNumber(name: string, fallback: number): number {
@@ -89,7 +89,7 @@ export function getEnv(): Env {
     kiloApiKey: getRequired("KILO_API_KEY"),
     kiloModel: getRequired("KILO_MODEL"),
     sourcePageSize: getNumber("SOURCE_PAGE_SIZE", 200),
-    maxSourcePagesPerRun: getNumber("MAX_SOURCE_PAGES_PER_RUN", 10),
+    maxSourcePagesPerRun: getNumber("MAX_SOURCE_PAGES_PER_RUN", 30),
     convexSaveBatchSize: getNumber("CONVEX_SAVE_BATCH_SIZE", 200),
     syncStateKey: process.env.SYNC_STATE_KEY ?? "source-headline-definitions",
   };
