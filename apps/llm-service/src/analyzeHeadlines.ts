@@ -141,51 +141,69 @@ async function requestTopicModel(
   let lastError: unknown;
 
   for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
-    const response = await fetch("https://api.kilo.ai/api/gateway/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model,
-        messages: [
-          {
-            role: "system",
-            content:
-              "Te egy precíz magyar nyelvű médiaszöveg-elemző vagy. Mindig kizárólag érvényes JSON-t adsz vissza.",
-          },
-          { role: "user", content: prompt },
-        ],
-        response_format: {
-          type: "json_schema",
-          json_schema: {
-            name: "topic_model_response",
-            strict: true,
-            schema: topicModelSchema,
-          },
-        },
-        temperature: 0.2,
-      }),
-    });
-
-    if (!response.ok) {
-      const errorText = await response.text();
-      throw new Error(
-        `Kilo API request failed: ${response.status} ${response.statusText}\n${errorText}`,
-      );
-    }
-
-    const responseJson = (await response.json()) as {
-      choices?: Array<{ message?: { content?: string } }>;
-    };
-
-    const content = responseJson.choices?.[0]?.message?.content;
-    if (!content) {
-      throw new Error("Kilo API response did not contain message content.");
-    }
-
     try {
+      const response = await fetch("https://api.kilo.ai/api/gateway/chat/completions", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          model,
+          messages: [
+            {
+              role: "system",
+              content:
+                "Te egy precíz magyar nyelvű médiaszöveg-elemző vagy. Mindig kizárólag érvényes JSON-t adsz vissza.",
+            },
+            { role: "user", content: prompt },
+          ],
+          response_format: {
+            type: "json_schema",
+            json_schema: {
+              name: "topic_model_response",
+              strict: true,
+              schema: topicModelSchema,
+            },
+          },
+          temperature: 0.2,
+        }),
+      });
+
+      const responseText = await response.text();
+
+      if (!response.ok) {
+        throw new Error(
+          `Kilo API request failed: ${response.status} ${response.statusText}\n${responseText}`,
+        );
+      }
+
+      if (!responseText.trim()) {
+        throw new Error("Kilo API returned an empty response body.");
+      }
+
+      let responseJson: {
+        choices?: Array<{ message?: { content?: string } }>;
+      };
+
+      try {
+        responseJson = JSON.parse(responseText) as {
+          choices?: Array<{ message?: { content?: string } }>;
+        };
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        throw new Error(
+          `Failed to parse Kilo API HTTP response JSON: ${message}\nResponse body:\n${responseText.slice(0, 4000)}`,
+        );
+      }
+
+      const content = responseJson.choices?.[0]?.message?.content;
+      if (!content) {
+        throw new Error(
+          `Kilo API response did not contain message content. Response body:\n${responseText.slice(0, 4000)}`,
+        );
+      }
+
       const parsed = parseJsonFromModelContent(content);
       validateResponse(parsed, headlines);
       return parsed;
@@ -204,7 +222,7 @@ export async function analyzeHeadlines(input: InputHeadline[]): Promise<LlmAnaly
   }
 
   const env = getEnv();
-  const chunks = chunkArray(input, 50);
+  const chunks = chunkArray(input, 20);
   const output: LlmAnalysisRow[] = [];
 
   for (const [chunkIndex, chunk] of chunks.entries()) {
