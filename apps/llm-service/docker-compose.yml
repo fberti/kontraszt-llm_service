@@ -14,6 +14,7 @@ services:
       MAX_SOURCE_PAGES_PER_RUN: ${MAX_SOURCE_PAGES_PER_RUN:-10}
       CONVEX_SAVE_BATCH_SIZE: ${CONVEX_SAVE_BATCH_SIZE:-200}
       SYNC_STATE_KEY: ${SYNC_STATE_KEY:-source-headline-definitions}
+      FULL_BACKFILL: ${FULL_BACKFILL:-false}
     ports:
       - "3000:3000"
     healthcheck:

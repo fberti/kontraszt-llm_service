@@ -54,7 +54,7 @@ export async function runSync(options?: {
   const key = env.syncStateKey;
 
   console.log(
-    `[runSync] Starting sync. key=${key}, webhookId=${options?.webhookId ?? "n/a"}, sourcePageSize=${env.sourcePageSize}, maxSourcePagesPerRun=${env.maxSourcePagesPerRun}, convexSaveBatchSize=${env.convexSaveBatchSize}`,
+    `[runSync] Starting sync. key=${key}, webhookId=${options?.webhookId ?? "n/a"}, sourcePageSize=${env.sourcePageSize}, maxSourcePagesPerRun=${env.maxSourcePagesPerRun}, convexSaveBatchSize=${env.convexSaveBatchSize}, fullBackfill=${env.fullBackfill}`,
   );
 
   console.log("[runSync] Acquiring sync lock...");
@@ -87,8 +87,14 @@ export async function runSync(options?: {
       `[runSync] Loaded sync state. previousCursor=${state?.sourceCursor ?? "null"}, isRunning=${state?.isRunning ?? false}`,
     );
     console.log(
-      `[runSync] Using source watermark=${sourceWatermark ?? "null"}. Only source headlines newer than this watermark will be considered for analysis.`,
+      `[runSync] Using source watermark=${sourceWatermark ?? "null"}. Only source headlines newer than this watermark will be considered for analysis unless FULL_BACKFILL is enabled.`,
     );
+
+    if (env.fullBackfill) {
+      console.log(
+        "[runSync] FULL_BACKFILL is enabled. The sync will scan until source pagination isDone=true and backfill any missing llmAnalysis rows regardless of watermark.",
+      );
+    }
 
     console.log("[runSync] Fetching source pages from source Convex...");
     for (let pageIndex = 0; pageIndex < env.maxSourcePagesPerRun; pageIndex += 1) {
@@ -100,14 +106,15 @@ export async function runSync(options?: {
       totalFetched += page.page.length;
 
       const dedupedPageRows = dedupeHeadlines(page.page);
-      const newerRows =
-        sourceWatermark === null
+      const candidateRows =
+        env.fullBackfill || sourceWatermark === null
           ? dedupedPageRows
           : dedupedPageRows.filter((row) => row.sourceCreationTime > sourceWatermark);
       const crossedWatermark =
+        !env.fullBackfill &&
         sourceWatermark !== null &&
         dedupedPageRows.some((row) => row.sourceCreationTime <= sourceWatermark);
-      const missingRows = await findMissingHeadlines(newerRows);
+      const missingRows = await findMissingHeadlines(candidateRows);
 
       let addedFromPage = 0;
       for (const row of missingRows) {
@@ -121,7 +128,7 @@ export async function runSync(options?: {
       }
 
       console.log(
-        `[runSync] Fetched source page ${pageIndex + 1}: rawRows=${page.page.length}, dedupedRows=${dedupedPageRows.length}, newerRows=${newerRows.length}, missingRows=${missingRows.length}, addedFromPage=${addedFromPage}, totalFetched=${totalFetched}, totalPendingAnalysis=${inputRows.length}, crossedWatermark=${crossedWatermark}, isDone=${page.isDone}, nextCursor=${page.continueCursor ?? "null"}`,
+        `[runSync] Fetched source page ${pageIndex + 1}: rawRows=${page.page.length}, dedupedRows=${dedupedPageRows.length}, candidateRows=${candidateRows.length}, missingRows=${missingRows.length}, addedFromPage=${addedFromPage}, totalFetched=${totalFetched}, totalPendingAnalysis=${inputRows.length}, crossedWatermark=${crossedWatermark}, isDone=${page.isDone}, nextCursor=${page.continueCursor ?? "null"}`,
       );
 
       if (page.isDone) {

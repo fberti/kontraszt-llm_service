@@ -12,6 +12,7 @@ type Env = {
   maxSourcePagesPerRun: number;
   convexSaveBatchSize: number;
   syncStateKey: string;
+  fullBackfill: boolean;
 };
 
 function loadEnvFile(path: string) {
@@ -68,6 +69,23 @@ function getNumber(name: string, fallback: number): number {
   return parsed;
 }
 
+function getBoolean(name: string, fallback: boolean): boolean {
+  const raw = process.env[name];
+  if (!raw) {
+    return fallback;
+  }
+
+  const normalized = raw.trim().toLowerCase();
+  if (["1", "true", "yes", "on"].includes(normalized)) {
+    return true;
+  }
+  if (["0", "false", "no", "off"].includes(normalized)) {
+    return false;
+  }
+
+  throw new Error(`Invalid boolean environment variable ${name}: ${raw}`);
+}
+
 let cachedEnv: Env | null = null;
 
 export function getEnv(): Env {
@@ -92,6 +110,7 @@ export function getEnv(): Env {
     maxSourcePagesPerRun: getNumber("MAX_SOURCE_PAGES_PER_RUN", 30),
     convexSaveBatchSize: getNumber("CONVEX_SAVE_BATCH_SIZE", 50),
     syncStateKey: process.env.SYNC_STATE_KEY ?? "source-headline-definitions",
+    fullBackfill: getBoolean("FULL_BACKFILL", false),
   };
 
   return cachedEnv;
