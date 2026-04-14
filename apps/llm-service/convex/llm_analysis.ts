@@ -1,3 +1,4 @@
+import { paginationOptsValidator } from "convex/server";
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 
@@ -69,6 +70,39 @@ export const getLatestSourceWatermark = query({
     }
 
     return null;
+  },
+});
+
+export const listLlmAnalysisPage = query({
+  args: {
+    paginationOpts: paginationOptsValidator,
+  },
+  handler: async (ctx, args) => {
+    return await ctx.db
+      .query("llmAnalysis")
+      .withIndex("by_analyzedAt_and_hashedId")
+      .order("desc")
+      .paginate(args.paginationOpts);
+  },
+});
+
+export const deleteLlmAnalysisBatch = mutation({
+  args: {
+    ids: v.array(v.id("llmAnalysis")),
+  },
+  handler: async (ctx, args) => {
+    let deleted = 0;
+
+    for (const id of args.ids) {
+      const existing = await ctx.db.get(id);
+      if (!existing) {
+        continue;
+      }
+      await ctx.db.delete(id);
+      deleted += 1;
+    }
+
+    return { deleted };
   },
 });
 

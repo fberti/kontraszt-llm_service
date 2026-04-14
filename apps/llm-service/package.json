@@ -7,6 +7,8 @@
     "deploy": "vp exec convex deploy",
     "serve": "node --experimental-strip-types src/server.ts",
     "run:sync": "node --experimental-strip-types scripts/run-sync.ts",
+    "audit:sync": "node --experimental-strip-types scripts/audit-sync.ts",
+    "cleanup:llm-analysis": "node --experimental-strip-types scripts/cleanup-extra-llm-analysis.ts",
     "import:parquet": "node scripts/import-parquet.mjs",
     "call:llm": "node --experimental-strip-types scripts/call_llm.ts",
     "save:convex": "node --experimental-strip-types scripts/save_to_convex.ts",

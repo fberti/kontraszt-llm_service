@@ -84,15 +84,19 @@ export async function runSync(options?: {
     const sourceWatermark = await getLatestSourceWatermark();
 
     console.log(
-      `[runSync] Loaded sync state. previousCursor=${state?.sourceCursor ?? "null"}, isRunning=${state?.isRunning ?? false}`,
+      `[runSync] Loaded sync state. previousCursor=${state?.sourceCursor ?? "null"}, isRunning=${state?.isRunning ?? false}, lastRunStartedAt=${state?.lastRunStartedAt ?? "null"}, lastRunFinishedAt=${state?.lastRunFinishedAt ?? "null"}`,
     );
     console.log(
-      `[runSync] Using source watermark=${sourceWatermark ?? "null"}. Only source headlines newer than this watermark will be considered for analysis unless FULL_BACKFILL is enabled.`,
+      `[runSync] Source watermark=${sourceWatermark ?? "null"}. Mode=${env.fullBackfill ? "full-backfill" : "incremental"}.`,
     );
 
     if (env.fullBackfill) {
       console.log(
-        "[runSync] FULL_BACKFILL is enabled. The sync will scan until source pagination isDone=true and backfill any missing llmAnalysis rows regardless of watermark.",
+        "[runSync] FULL_BACKFILL enabled: scanning source until pagination completes or MAX_SOURCE_PAGES_PER_RUN is reached; analyzing only rows missing from llmAnalysis.",
+      );
+    } else {
+      console.log(
+        "[runSync] Incremental mode: scanning newest-first source pages and stopping once rows are no longer newer than the saved source watermark.",
       );
     }
 
@@ -128,7 +132,7 @@ export async function runSync(options?: {
       }
 
       console.log(
-        `[runSync] Fetched source page ${pageIndex + 1}: rawRows=${page.page.length}, dedupedRows=${dedupedPageRows.length}, candidateRows=${candidateRows.length}, missingRows=${missingRows.length}, addedFromPage=${addedFromPage}, totalFetched=${totalFetched}, totalPendingAnalysis=${inputRows.length}, crossedWatermark=${crossedWatermark}, isDone=${page.isDone}, nextCursor=${page.continueCursor ?? "null"}`,
+        `[runSync] Page ${pageIndex + 1}/${env.maxSourcePagesPerRun}: raw=${page.page.length}, deduped=${dedupedPageRows.length}, candidates=${candidateRows.length}, missing=${missingRows.length}, added=${addedFromPage}, totalFetched=${totalFetched}, pending=${inputRows.length}, crossedWatermark=${crossedWatermark}, isDone=${page.isDone}`,
       );
 
       if (page.isDone) {
@@ -138,7 +142,7 @@ export async function runSync(options?: {
 
       if (crossedWatermark) {
         console.log(
-          `[runSync] Stopping after page ${pageIndex + 1} because source rows are no longer newer than watermark=${sourceWatermark}.`,
+          `[runSync] Stop condition reached at page ${pageIndex + 1}: source rows are no longer newer than watermark=${sourceWatermark}.`,
         );
         break;
       }
@@ -147,7 +151,9 @@ export async function runSync(options?: {
     }
 
     if (inputRows.length === 0) {
-      console.log("[runSync] No unanalyzed input rows found. Finalizing sync state only...");
+      console.log(
+        `[runSync] No unanalyzed input rows found after scanning ${totalFetched} source rows. Finalizing sync state only...`,
+      );
       await finishSyncRun(key, null);
       console.log("[runSync] Sync finished successfully with no work. nextCursor=null");
       return {
@@ -160,7 +166,9 @@ export async function runSync(options?: {
       };
     }
 
-    console.log(`[runSync] Sending ${inputRows.length} missing rows to headline analysis...`);
+    console.log(
+      `[runSync] Scan complete. fetched=${totalFetched}, pendingAnalysis=${inputRows.length}. Sending missing rows to headline analysis...`,
+    );
     const analyzedRows = await analyzeHeadlines(inputRows);
     console.log(`[runSync] Headline analysis completed. analyzedRows=${analyzedRows.length}`);
 
@@ -170,7 +178,9 @@ export async function runSync(options?: {
 
     console.log("[runSync] Finalizing sync state with nextCursor=null...");
     await finishSyncRun(key, null);
-    console.log("[runSync] Sync completed successfully.");
+    console.log(
+      `[runSync] Sync completed successfully. fetched=${totalFetched}, analyzed=${analyzedRows.length}, inserted=${saved.inserted}, skipped=${saved.skipped}`,
+    );
 
     return {
       status: "success",

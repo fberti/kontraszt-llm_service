@@ -100,6 +100,25 @@ export async function findMissingHeadlines(rows: HeadlineLookupRow[]) {
   );
 }
 
+export async function listLlmAnalysisPage(cursor: string | null, numItems: number) {
+  return await withConvexRetry("listLlmAnalysisPage", async () =>
+    client.query(api.llm_analysis.listLlmAnalysisPage, {
+      paginationOpts: {
+        cursor,
+        numItems,
+      },
+    }),
+  );
+}
+
+export async function deleteLlmAnalysisBatch(ids: string[]) {
+  return await withConvexRetry("deleteLlmAnalysisBatch", async () =>
+    client.mutation(api.llm_analysis.deleteLlmAnalysisBatch, {
+      ids: ids as never,
+    }),
+  );
+}
+
 export async function saveLlmAnalysisBatch(rows: LlmAnalysisRow[]) {
   return await withConvexRetry("saveLlmAnalysisBatch", async () =>
     client.mutation(api.llm_analysis.saveLlmAnalysisBatch, {
