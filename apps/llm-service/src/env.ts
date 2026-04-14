@@ -90,7 +90,7 @@ export function getEnv(): Env {
     kiloModel: getRequired("KILO_MODEL"),
     sourcePageSize: getNumber("SOURCE_PAGE_SIZE", 200),
     maxSourcePagesPerRun: getNumber("MAX_SOURCE_PAGES_PER_RUN", 30),
-    convexSaveBatchSize: getNumber("CONVEX_SAVE_BATCH_SIZE", 200),
+    convexSaveBatchSize: getNumber("CONVEX_SAVE_BATCH_SIZE", 50),
     syncStateKey: process.env.SYNC_STATE_KEY ?? "source-headline-definitions",
   };
 
