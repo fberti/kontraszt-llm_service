@@ -60,14 +60,15 @@ export const getLatestSourceWatermark = query({
       .query("llmAnalysis")
       .withIndex("by_analyzedAt_and_hashedId")
       .order("desc")
-      .take(1);
+      .take(256);
 
-    const row = latest[0];
-    if (!row) {
-      return null;
+    for (const row of latest) {
+      if (row.sourceCreationTime !== undefined) {
+        return row.sourceCreationTime;
+      }
     }
 
-    return row.sourceCreationTime ?? row.analyzedAt;
+    return null;
   },
 });
 
