@@ -3,6 +3,7 @@ import { getEnv } from "./env.ts";
 export type LlmAnalysisRow = {
   hashedId: string;
   headlineText: string;
+  sourceCreationTime: number;
   label: string;
   sentiment: string;
   sentiment_score: number;
@@ -13,6 +14,7 @@ export type LlmAnalysisRow = {
 type InputHeadline = {
   hashedId: string;
   headlineText: string;
+  sourceCreationTime: number;
 };
 
 type TopicModelItem = {
@@ -234,6 +236,7 @@ export async function analyzeHeadlines(input: InputHeadline[]): Promise<LlmAnaly
     const mapped = parsed.items.map((item, index) => ({
       hashedId: chunk[index]!.hashedId,
       headlineText: chunk[index]!.headlineText,
+      sourceCreationTime: chunk[index]!.sourceCreationTime,
       label: item.label,
       sentiment: item.sentiment,
       sentiment_score: item.sentiment_score,

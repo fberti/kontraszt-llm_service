@@ -5,11 +5,13 @@ import { getEnv } from "./env.ts";
 type HeadlineLookupRow = {
   hashedId: string;
   headlineText: string;
+  sourceCreationTime: number;
 };
 
 type LlmAnalysisRow = {
   hashedId: string;
   headlineText: string;
+  sourceCreationTime: number;
   label: string;
   sentiment: string;
   sentiment_score?: number;
@@ -81,6 +83,12 @@ export async function finishSyncRun(key: string, sourceCursor?: string | null, e
       ...(sourceCursor === undefined ? {} : { sourceCursor }),
       ...(error === undefined ? {} : { error }),
     }),
+  );
+}
+
+export async function getLatestSourceWatermark() {
+  return await withConvexRetry("getLatestSourceWatermark", async () =>
+    client.query(api.llm_analysis.getLatestSourceWatermark, {}),
   );
 }
 

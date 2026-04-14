@@ -3,7 +3,13 @@ import { getEnv } from "./env.ts";
 import { saveLlmAnalysis } from "./saveLlmAnalysis.ts";
 import { fetchHeadlineDefinitionsPage } from "./sourceConvex.ts";
 import type { LlmInputHeadline, SourceHeadlineDefinition } from "./sourceTypes.ts";
-import { findMissingHeadlines, finishSyncRun, getSyncState, startSyncRun } from "./targetConvex.ts";
+import {
+  findMissingHeadlines,
+  finishSyncRun,
+  getLatestSourceWatermark,
+  getSyncState,
+  startSyncRun,
+} from "./targetConvex.ts";
 
 export type RunSyncResult = {
   status: "success" | "ignored" | "failed";
@@ -33,6 +39,7 @@ function dedupeHeadlines(rows: SourceHeadlineDefinition[]): LlmInputHeadline[] {
     output.push({
       hashedId: row.hashedId,
       headlineText: row.headlineText,
+      sourceCreationTime: row._creationTime,
     });
   }
 
@@ -74,12 +81,13 @@ export async function runSync(options?: {
     let totalFetched = 0;
     const seenAcrossPages = new Set<string>();
     const inputRows: LlmInputHeadline[] = [];
+    const sourceWatermark = await getLatestSourceWatermark();
 
     console.log(
       `[runSync] Loaded sync state. previousCursor=${state?.sourceCursor ?? "null"}, isRunning=${state?.isRunning ?? false}`,
     );
     console.log(
-      "[runSync] Fetching from cursor=null because source pagination is newest-first; resuming from a saved terminal cursor can miss newly inserted headlines.",
+      `[runSync] Using source watermark=${sourceWatermark ?? "null"}. Only source headlines newer than this watermark will be considered for analysis.`,
     );
 
     console.log("[runSync] Fetching source pages from source Convex...");
@@ -92,7 +100,14 @@ export async function runSync(options?: {
       totalFetched += page.page.length;
 
       const dedupedPageRows = dedupeHeadlines(page.page);
-      const missingRows = await findMissingHeadlines(dedupedPageRows);
+      const newerRows =
+        sourceWatermark === null
+          ? dedupedPageRows
+          : dedupedPageRows.filter((row) => row.sourceCreationTime > sourceWatermark);
+      const crossedWatermark =
+        sourceWatermark !== null &&
+        dedupedPageRows.some((row) => row.sourceCreationTime <= sourceWatermark);
+      const missingRows = await findMissingHeadlines(newerRows);
 
       let addedFromPage = 0;
       for (const row of missingRows) {
@@ -106,11 +121,18 @@ export async function runSync(options?: {
       }
 
       console.log(
-        `[runSync] Fetched source page ${pageIndex + 1}: rawRows=${page.page.length}, dedupedRows=${dedupedPageRows.length}, missingRows=${missingRows.length}, addedFromPage=${addedFromPage}, totalFetched=${totalFetched}, totalPendingAnalysis=${inputRows.length}, isDone=${page.isDone}, nextCursor=${page.continueCursor ?? "null"}`,
+        `[runSync] Fetched source page ${pageIndex + 1}: rawRows=${page.page.length}, dedupedRows=${dedupedPageRows.length}, newerRows=${newerRows.length}, missingRows=${missingRows.length}, addedFromPage=${addedFromPage}, totalFetched=${totalFetched}, totalPendingAnalysis=${inputRows.length}, crossedWatermark=${crossedWatermark}, isDone=${page.isDone}, nextCursor=${page.continueCursor ?? "null"}`,
       );
 
       if (page.isDone) {
         console.log(`[runSync] Source pagination completed after ${pageIndex + 1} page(s).`);
+        break;
+      }
+
+      if (crossedWatermark) {
+        console.log(
+          `[runSync] Stopping after page ${pageIndex + 1} because source rows are no longer newer than watermark=${sourceWatermark}.`,
+        );
         break;
       }
 

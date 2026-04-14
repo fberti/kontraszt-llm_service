@@ -5,6 +5,7 @@ export default defineSchema({
   llmAnalysis: defineTable({
     hashedId: v.string(),
     headlineText: v.string(),
+    sourceCreationTime: v.optional(v.number()),
     label: v.string(),
     sentiment: v.string(),
     sentiment_score: v.optional(v.number()),

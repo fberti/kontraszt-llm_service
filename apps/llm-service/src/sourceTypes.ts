@@ -10,6 +10,7 @@ export type SourceHeadlineDefinition = {
 export type LlmInputHeadline = {
   hashedId: string;
   headlineText: string;
+  sourceCreationTime: number;
 };
 
 export type SourceHeadlineDefinitionsPage = {

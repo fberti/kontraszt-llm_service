@@ -4,11 +4,13 @@ import { v } from "convex/values";
 const headlineLookupRow = v.object({
   hashedId: v.string(),
   headlineText: v.string(),
+  sourceCreationTime: v.number(),
 });
 
 const llmAnalysisRow = v.object({
   hashedId: v.string(),
   headlineText: v.string(),
+  sourceCreationTime: v.optional(v.number()),
   label: v.string(),
   sentiment: v.string(),
   sentiment_score: v.optional(v.number()),
@@ -21,7 +23,11 @@ export const findMissingHeadlines = query({
     rows: v.array(headlineLookupRow),
   },
   handler: async (ctx, args) => {
-    const missing: Array<{ hashedId: string; headlineText: string }> = [];
+    const missing: Array<{
+      hashedId: string;
+      headlineText: string;
+      sourceCreationTime: number;
+    }> = [];
     const seenInRequest = new Set<string>();
 
     for (const row of args.rows) {
@@ -44,6 +50,24 @@ export const findMissingHeadlines = query({
     }
 
     return missing;
+  },
+});
+
+export const getLatestSourceWatermark = query({
+  args: {},
+  handler: async (ctx) => {
+    const latest = await ctx.db
+      .query("llmAnalysis")
+      .withIndex("by_analyzedAt_and_hashedId")
+      .order("desc")
+      .take(1);
+
+    const row = latest[0];
+    if (!row) {
+      return null;
+    }
+
+    return row.sourceCreationTime ?? row.analyzedAt;
   },
 });
 
