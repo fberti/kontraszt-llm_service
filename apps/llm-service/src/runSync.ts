@@ -46,8 +46,14 @@ export async function runSync(options?: {
   const env = getEnv();
   const key = env.syncStateKey;
 
+  console.log(
+    `[runSync] Starting sync. key=${key}, webhookId=${options?.webhookId ?? "n/a"}, sourcePageSize=${env.sourcePageSize}, maxSourcePagesPerRun=${env.maxSourcePagesPerRun}, convexSaveBatchSize=${env.convexSaveBatchSize}`,
+  );
+
+  console.log("[runSync] Acquiring sync lock...");
   const lock = await startSyncRun(key, options?.webhookId);
   if (!lock.started) {
+    console.log(`[runSync] Sync ignored. reason=${lock.reason ?? "unknown"}`);
     return {
       status: "ignored",
       reason: "already_running",
@@ -59,34 +65,53 @@ export async function runSync(options?: {
     };
   }
 
+  console.log(`[runSync] Sync lock acquired. stateId=${String(lock.stateId)}`);
+
   try {
+    console.log("[runSync] Loading current sync state from target Convex...");
     const state = await getSyncState(key);
     let cursor = state?.sourceCursor ?? null;
     let latestCursor = cursor;
 
+    console.log(
+      `[runSync] Loaded sync state. previousCursor=${cursor ?? "null"}, isRunning=${state?.isRunning ?? false}`,
+    );
+
     const fetchedRows: SourceHeadlineDefinition[] = [];
 
+    console.log("[runSync] Fetching source pages from source Convex...");
     for (let pageIndex = 0; pageIndex < env.maxSourcePagesPerRun; pageIndex += 1) {
+      console.log(
+        `[runSync] Fetching source page ${pageIndex + 1}/${env.maxSourcePagesPerRun} with cursor=${cursor ?? "null"}`,
+      );
+
       const page = await fetchHeadlineDefinitionsPage(cursor, env.sourcePageSize);
 
       fetchedRows.push(...page.page);
       latestCursor = page.continueCursor;
 
       console.log(
-        `Fetched source page ${pageIndex + 1}: ${page.page.length} rows, isDone=${page.isDone}`,
+        `[runSync] Fetched source page ${pageIndex + 1}: rows=${page.page.length}, totalFetched=${fetchedRows.length}, isDone=${page.isDone}, nextCursor=${page.continueCursor ?? "null"}`,
       );
 
       if (page.isDone) {
+        console.log(`[runSync] Source pagination completed after ${pageIndex + 1} page(s).`);
         break;
       }
 
       cursor = page.continueCursor;
     }
 
+    console.log(`[runSync] Deduplicating ${fetchedRows.length} fetched rows...`);
     const inputRows = dedupeHeadlines(fetchedRows);
+    console.log(`[runSync] Deduped rows count=${inputRows.length}`);
 
     if (inputRows.length === 0) {
+      console.log("[runSync] No new input rows found. Finalizing sync state only...");
       await finishSyncRun(key, latestCursor);
+      console.log(
+        `[runSync] Sync finished successfully with no work. nextCursor=${latestCursor ?? "null"}`,
+      );
       return {
         status: "success",
         fetchedCount: 0,
@@ -97,10 +122,17 @@ export async function runSync(options?: {
       };
     }
 
+    console.log(`[runSync] Sending ${inputRows.length} deduped rows to headline analysis...`);
     const analyzedRows = await analyzeHeadlines(inputRows);
-    const saved = await saveLlmAnalysis(analyzedRows);
+    console.log(`[runSync] Headline analysis completed. analyzedRows=${analyzedRows.length}`);
 
+    console.log(`[runSync] Saving ${analyzedRows.length} analyzed rows to target Convex...`);
+    const saved = await saveLlmAnalysis(analyzedRows);
+    console.log(`[runSync] Save completed. inserted=${saved.inserted}, skipped=${saved.skipped}`);
+
+    console.log(`[runSync] Finalizing sync state with nextCursor=${latestCursor ?? "null"}...`);
     await finishSyncRun(key, latestCursor);
+    console.log("[runSync] Sync completed successfully.");
 
     return {
       status: "success",
@@ -112,7 +144,9 @@ export async function runSync(options?: {
     };
   } catch (error) {
     const message = error instanceof Error ? (error.stack ?? error.message) : String(error);
+    console.error("[runSync] Sync failed. Attempting to persist error state...", error);
     await finishSyncRun(key, undefined, message);
+    console.error("[runSync] Error state persisted to syncState.lastError.");
 
     return {
       status: "failed",
