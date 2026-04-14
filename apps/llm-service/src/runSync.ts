@@ -96,7 +96,7 @@ export async function runSync(options?: {
       );
     } else {
       console.log(
-        "[runSync] Incremental mode: scanning newest-first source pages and stopping once rows are no longer newer than the saved source watermark.",
+        "[runSync] Incremental mode: scanning up to MAX_SOURCE_PAGES_PER_RUN source pages and selecting rows newer than the saved source watermark. No early stop is used because source pagination order does not reliably match sourceCreationTime.",
       );
     }
 
@@ -142,9 +142,8 @@ export async function runSync(options?: {
 
       if (crossedWatermark) {
         console.log(
-          `[runSync] Stop condition reached at page ${pageIndex + 1}: source rows are no longer newer than watermark=${sourceWatermark}.`,
+          `[runSync] Page ${pageIndex + 1} crossed watermark=${sourceWatermark}, but continuing scan because source pagination is not strictly ordered by sourceCreationTime.`,
         );
-        break;
       }
 
       cursor = page.continueCursor;
