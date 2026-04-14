@@ -2,6 +2,11 @@ import { ConvexHttpClient } from "convex/browser";
 import { api } from "../convex/_generated/api.js";
 import { getEnv } from "./env.ts";
 
+type HeadlineLookupRow = {
+  hashedId: string;
+  headlineText: string;
+};
+
 type LlmAnalysisRow = {
   hashedId: string;
   headlineText: string;
@@ -75,6 +80,14 @@ export async function finishSyncRun(key: string, sourceCursor?: string | null, e
       key,
       ...(sourceCursor === undefined ? {} : { sourceCursor }),
       ...(error === undefined ? {} : { error }),
+    }),
+  );
+}
+
+export async function findMissingHeadlines(rows: HeadlineLookupRow[]) {
+  return await withConvexRetry("findMissingHeadlines", async () =>
+    client.query(api.llm_analysis.findMissingHeadlines, {
+      rows,
     }),
   );
 }

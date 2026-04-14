@@ -1,5 +1,10 @@
-import { mutation } from "./_generated/server";
+import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
+
+const headlineLookupRow = v.object({
+  hashedId: v.string(),
+  headlineText: v.string(),
+});
 
 const llmAnalysisRow = v.object({
   hashedId: v.string(),
@@ -9,6 +14,37 @@ const llmAnalysisRow = v.object({
   sentiment_score: v.optional(v.number()),
   entities: v.array(v.string()),
   confidence: v.number(),
+});
+
+export const findMissingHeadlines = query({
+  args: {
+    rows: v.array(headlineLookupRow),
+  },
+  handler: async (ctx, args) => {
+    const missing: Array<{ hashedId: string; headlineText: string }> = [];
+    const seenInRequest = new Set<string>();
+
+    for (const row of args.rows) {
+      const dedupeKey = `${row.hashedId}::${row.headlineText}`;
+      if (seenInRequest.has(dedupeKey)) {
+        continue;
+      }
+      seenInRequest.add(dedupeKey);
+
+      const existing = await ctx.db
+        .query("llmAnalysis")
+        .withIndex("by_hashedId_and_headlineText", (q) =>
+          q.eq("hashedId", row.hashedId).eq("headlineText", row.headlineText),
+        )
+        .take(1);
+
+      if (existing.length === 0) {
+        missing.push(row);
+      }
+    }
+
+    return missing;
+  },
 });
 
 export const saveLlmAnalysisBatch = mutation({

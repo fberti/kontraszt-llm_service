@@ -3,7 +3,7 @@ import { getEnv } from "./env.ts";
 import { saveLlmAnalysis } from "./saveLlmAnalysis.ts";
 import { fetchHeadlineDefinitionsPage } from "./sourceConvex.ts";
 import type { LlmInputHeadline, SourceHeadlineDefinition } from "./sourceTypes.ts";
-import { finishSyncRun, getSyncState, startSyncRun } from "./targetConvex.ts";
+import { findMissingHeadlines, finishSyncRun, getSyncState, startSyncRun } from "./targetConvex.ts";
 
 export type RunSyncResult = {
   status: "success" | "ignored" | "failed";
@@ -70,14 +70,17 @@ export async function runSync(options?: {
   try {
     console.log("[runSync] Loading current sync state from target Convex...");
     const state = await getSyncState(key);
-    let cursor = state?.sourceCursor ?? null;
-    let latestCursor = cursor;
+    let cursor: string | null = null;
+    let totalFetched = 0;
+    const seenAcrossPages = new Set<string>();
+    const inputRows: LlmInputHeadline[] = [];
 
     console.log(
-      `[runSync] Loaded sync state. previousCursor=${cursor ?? "null"}, isRunning=${state?.isRunning ?? false}`,
+      `[runSync] Loaded sync state. previousCursor=${state?.sourceCursor ?? "null"}, isRunning=${state?.isRunning ?? false}`,
     );
-
-    const fetchedRows: SourceHeadlineDefinition[] = [];
+    console.log(
+      "[runSync] Fetching from cursor=null because source pagination is newest-first; resuming from a saved terminal cursor can miss newly inserted headlines.",
+    );
 
     console.log("[runSync] Fetching source pages from source Convex...");
     for (let pageIndex = 0; pageIndex < env.maxSourcePagesPerRun; pageIndex += 1) {
@@ -86,12 +89,24 @@ export async function runSync(options?: {
       );
 
       const page = await fetchHeadlineDefinitionsPage(cursor, env.sourcePageSize);
+      totalFetched += page.page.length;
 
-      fetchedRows.push(...page.page);
-      latestCursor = page.continueCursor;
+      const dedupedPageRows = dedupeHeadlines(page.page);
+      const missingRows = await findMissingHeadlines(dedupedPageRows);
+
+      let addedFromPage = 0;
+      for (const row of missingRows) {
+        const key = `${row.hashedId}::${row.headlineText}`;
+        if (seenAcrossPages.has(key)) {
+          continue;
+        }
+        seenAcrossPages.add(key);
+        inputRows.push(row);
+        addedFromPage += 1;
+      }
 
       console.log(
-        `[runSync] Fetched source page ${pageIndex + 1}: rows=${page.page.length}, totalFetched=${fetchedRows.length}, isDone=${page.isDone}, nextCursor=${page.continueCursor ?? "null"}`,
+        `[runSync] Fetched source page ${pageIndex + 1}: rawRows=${page.page.length}, dedupedRows=${dedupedPageRows.length}, missingRows=${missingRows.length}, addedFromPage=${addedFromPage}, totalFetched=${totalFetched}, totalPendingAnalysis=${inputRows.length}, isDone=${page.isDone}, nextCursor=${page.continueCursor ?? "null"}`,
       );
 
       if (page.isDone) {
@@ -102,27 +117,21 @@ export async function runSync(options?: {
       cursor = page.continueCursor;
     }
 
-    console.log(`[runSync] Deduplicating ${fetchedRows.length} fetched rows...`);
-    const inputRows = dedupeHeadlines(fetchedRows);
-    console.log(`[runSync] Deduped rows count=${inputRows.length}`);
-
     if (inputRows.length === 0) {
-      console.log("[runSync] No new input rows found. Finalizing sync state only...");
-      await finishSyncRun(key, latestCursor);
-      console.log(
-        `[runSync] Sync finished successfully with no work. nextCursor=${latestCursor ?? "null"}`,
-      );
+      console.log("[runSync] No unanalyzed input rows found. Finalizing sync state only...");
+      await finishSyncRun(key, null);
+      console.log("[runSync] Sync finished successfully with no work. nextCursor=null");
       return {
         status: "success",
-        fetchedCount: 0,
+        fetchedCount: totalFetched,
         analyzedCount: 0,
         inserted: 0,
         skipped: 0,
-        nextCursor: latestCursor,
+        nextCursor: null,
       };
     }
 
-    console.log(`[runSync] Sending ${inputRows.length} deduped rows to headline analysis...`);
+    console.log(`[runSync] Sending ${inputRows.length} missing rows to headline analysis...`);
     const analyzedRows = await analyzeHeadlines(inputRows);
     console.log(`[runSync] Headline analysis completed. analyzedRows=${analyzedRows.length}`);
 
@@ -130,17 +139,17 @@ export async function runSync(options?: {
     const saved = await saveLlmAnalysis(analyzedRows);
     console.log(`[runSync] Save completed. inserted=${saved.inserted}, skipped=${saved.skipped}`);
 
-    console.log(`[runSync] Finalizing sync state with nextCursor=${latestCursor ?? "null"}...`);
-    await finishSyncRun(key, latestCursor);
+    console.log("[runSync] Finalizing sync state with nextCursor=null...");
+    await finishSyncRun(key, null);
     console.log("[runSync] Sync completed successfully.");
 
     return {
       status: "success",
-      fetchedCount: inputRows.length,
+      fetchedCount: totalFetched,
       analyzedCount: analyzedRows.length,
       inserted: saved.inserted,
       skipped: saved.skipped,
-      nextCursor: latestCursor,
+      nextCursor: null,
     };
   } catch (error) {
     const message = error instanceof Error ? (error.stack ?? error.message) : String(error);
